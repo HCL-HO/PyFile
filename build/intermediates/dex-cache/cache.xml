@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Yixin-Core-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e80c854dca1f3ecb3ab3b042a4c46df41a9593a3">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Yixin-Core-2.8.2_e328820d51e0f5ed46eecdf09147398de1e667ce/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/9770cb4e487ba020c4bacfa38e6cb6aacb75af04/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f4e7adebf49e683db82fb6efac2caaf3d768b8d4">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1e632cfc8e593e7d038b71c772c109684d732383/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/slf4j-api-1.7.25.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0816257c1701d10d4011eb018cd8e612f556e9f9">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/slf4j-api-1.7.25_f5d442e600c360ae06d5e786b0ae4bd59c113b90/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.tencent.tinker/bsdiff-util/1.7.6/476cd1bc7ea0732ce3f4576ad3c521735f800662/bsdiff-util-1.7.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="476cd1bc7ea0732ce3f4576ad3c521735f800662">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/bsdiff-util-1.7.6_d2f2674acaa4158f023df6f616eb5ca6ede62f49/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Pinterest-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8c7ab1a50bea23713c30da69558948a3804a34c3">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Pinterest-2.8.2_48732a7f6fd3d30a36a204a26514092f60ba18d3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.tencent.tinker/aosp-dexutils/1.7.6/646889b93e8a7876a50f04d86c122a27f18e3b76/aosp-dexutils-1.7.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="646889b93e8a7876a50f04d86c122a27f18e3b76">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/aosp-dexutils-1.7.6_64e564d2afa37db0ddba4a5eb84dceb6081bec64/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Instagram-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a8c48661f0ce80b1e6cc1fbe0313e8975435c62d">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Instagram-2.8.2_f36879448efff8c9521dc1a5ea91675fdc9c88b8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/1710cf27d4d5510c45f5ceb4ef868c509d4aafb7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a291a37263a30113eb90ad7618fd7081d8c0e837">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_87d43f202f08d2fdc3103235bc7881b3f4670ae4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/21d4d0d450c915e48aa1bd66256e2f3443a61228/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7912610ed96381c25c36d986eba422731b9641b6">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7464149f810112bf15dc52fd929e37fb80ffb38a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.nostra13.universalimageloader/universal-image-loader/1.9.4/dd9eeb557650c4ad7394df23f0f5cf27a7cfc697/universal-image-loader-1.9.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dd9eeb557650c4ad7394df23f0f5cf27a7cfc697">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/universal-image-loader-1.9.4_647e5fe4f6c3cf9c8faa04b5fe0e1f9ca37eefa8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-TencentWeibo-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="30b58e68a37b15c6159ebe6983e58e84743e1e3f">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-TencentWeibo-2.8.2_08a0cbd0751b704348cb169193ed29df43f1ed46/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-QQ-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbb64a7456b98849ee2868a55aa0b3bb3f6e6a29">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-QQ-2.8.2_8d0e43cc02bb96efc7ec7150695011ea668e0d7d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.2.1/2287494d4f5f9f3a9a2bb6980e3f32053721b315/core-3.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2287494d4f5f9f3a9a2bb6980e3f32053721b315">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/core-3.2.1_2daa7192edf89f90d9997d10d3d971fad94d4684/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/slf4j-simple-1.7.25.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1e3442d6581e054e9fa73ad7ab6a5da0d98fa6b9">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/slf4j-simple-1.7.25_ae83ea0a64df9da5aada25714f4bd935d69bad51/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Twitter-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9a6b3827ab45de1b3b7df380c2ba95e53e3d5228">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Twitter-2.8.2_854687824409aeb9c3278283165a366b66543da6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/0b03da32cabb3038766d1d769d4d2f72a8ef9d4c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c6e8f9ca197f53dbe745563f37324053b5646346/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/amqp-client-4.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="256f6c92c55a8d3cfae8d32e1a15713baedab184">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/amqp-client-4.1.1_2624a416d8558687ab6abf5a9856ceddf49ddf77/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Meipai-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="330092113553cc9b3030c0bdb99c4723a24805b9">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Meipai-2.8.2_4f5c5406cb19247121c7e0e37269344f6f2c9736/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Email-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6af2c732a480ae98d94b3413e8a49daca39c11f4">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Email-2.8.2_84cf92a812cfe02ff53a324244015085a4a26464/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Core-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="521f72e4ce63c721c5d3006bfa4fa712dd51bea9">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Core-2.8.2_f842e007d36e067e7ebfcd83acd744a02b21826c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-YouDao-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ff0ee7569a2ba304bf5d029b9fc1d4ec4fc511a4">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-YouDao-2.8.2_ddeda0d7922b271b83d291cceac3a7d0d3709231/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.4.0/40340c0748190fe897baf7bffbc1b282734294e5/okhttp-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="40340c0748190fe897baf7bffbc1b282734294e5">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-2.4.0_e4297e3796e8e2371961397d8e69bf33004f05f9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/3b8aaacf8278fcf3f9b8debdeedb1d8d6b6e25cb/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7a9f96bfbb71dc928a5d01440d879ef17f3f2349">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_701596100f97f1c39d8404b5721ae4ce1a41fb57/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Facebook-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6fb4a741c1bce3db23e592b939933cf9872bc20b">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Facebook-2.8.2_3c4b65c318be5205864ec77668dd68b8fb0c9fc4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.8.0/9bada650e1afe9c6174ddc0d113c1fce4dc26fe0/glide-3.8.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9bada650e1afe9c6174ddc0d113c1fce4dc26fe0">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.8.0_0072fc5e061fe8824a1767fc93204d1f957a1942/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.squareup.leakcanary/leakcanary-watcher/1.3/632482a61ad24b7ec864072945d221369f9a606/leakcanary-watcher-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0632482a61ad24b7ec864072945d221369f9a606">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/leakcanary-watcher-1.3_ce28cdf492e354848df77d5cdd128e2535a1a9e5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Foursquare-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a8ff0b31dc964b7458f766e52bf1cef99df9803e">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Foursquare-2.8.2_4cbef1446fd1be35e969c6943622f45ec90c281e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-KakaoStory-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3ca72cce12691d718c83fd2d2da5a242368f9185">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-KakaoStory-2.8.2_6b92a2e363a0c3ac6ea713e2e49ff4fb3799ce30/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-KaiXin-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8ab26368f2f325185b5e3773f8ac819a067f4426">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-KaiXin-2.8.2_66e96d806490ea80231b36d51c70ced34418e2bb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Dropbox-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e65565c1f16a2a2c1be20cdd2fac24add6a3c49e">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Dropbox-2.8.2_56bd491d67838d4a419b395a7fcca44e5b56cbe6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Alipay-Moments-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="87066c53ca2eb2dacb3089c0cd7e69e868d62245">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Alipay-Moments-2.8.2_040b02e170f025bff2834abc595e82df1d3d17ee/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/library-2.4.0_753b19d47c3b03296c2d9ddc41e1d944b4024cb1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/dinpayPlugin.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1bc1cddc41744f0321e48eefafacd979ce29fb59">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/dinpayPlugin_8798d097b77dd0c08971fcf6d02908c3d4968374/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/de.greenrobot/eventbus/2.4.0/ddd166d01b3158d1c00576d29f7ed15c030df719/eventbus-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ddd166d01b3158d1c00576d29f7ed15c030df719">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/eventbus-2.4.0_dce7431a45c7875dfa53f3f8f4bfa4d5bba164fd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/6ae781816b5d5a9c7e5554d41188acc7cc5fe4c2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e699699fae0092703de1d02b217f43803d0f7e0a">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_390ca74589ebb9587d5430d9c1f2e60b36e34840/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Mingdao-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a747993a33f373e3faccd6ff22a802c33dbbcc69">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Mingdao-2.8.2_36e8caacca7c16753eff14932cc003753e0ce227/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Evernote-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e807f5b49afe72a1b6d850bad24976416f311edb">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Evernote-2.8.2_4674bbe4a6373971d2ac2f4d7ed659a2c8ac0364/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_ed1f017dbde37291d2254443ad207b160f7b6c0f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/37422039e8fe10a59e655944d9d2656c30bd41c1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_73a672404683d7c602fa399722264124a5c450a6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/1956a9655f2b641acfdac0192d15e5184a7c87a5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="439f1fa08fbc88d31ffdb11d80a13211689da6aa">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_edde990060a5d7f19aac592833b92c2b499f7ed7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/47465ff30539e20e23cb9fb0f78495b4dd9e3fda/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="11b4c737061f512cd18381b8ca5ee868c3e97716">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_acf321c8af389c5eacc17b68d63ae2bb22d369ce/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.squareup.leakcanary/leakcanary-analyzer/1.3/c5399b18a672f7973c8a9b9d6b731a3a36e590cc/leakcanary-analyzer-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c5399b18a672f7973c8a9b9d6b731a3a36e590cc">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/leakcanary-analyzer-1.3_6c92bf6e53585f26c2454b9fb942dba801d5aee8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Kakao-Core-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="33dada8d0d90fcb5d3653ae04e3575f110fa41b9">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Kakao-Core-2.8.2_7ce17f3820ef274bf9e3176412fde864fd26aaef/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/f77cdd36900d190f3d71a9cd0ada00ead570cbad/output/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_fcaf9f7a501a101e73cf59510c89cc3afb91a98e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/2e6b965af0ff160bd022b224b6f8639d4c768e6a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f577701fa1e05f14bde07bfbd522ced08fe1f7a0">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_17e3ad4e6eaa69652f4ac4047e7ae7db3bb67460/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/1ed77a3284fe86baa3c09bdc5bde0debc3e8d499/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="607d961caf1a59b6e782724654c1f3229e036c20">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_37c02f5f8c781d06e68593b36aea1fad4d379927/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/5dd1a4579829658c5e862c4d03de06458962bc3b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d479c1d49762b3e9edc67a55a73f5e602d88a234/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/b0ff0a5c6d91542af1f27c5858f64fde587b1ff6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6ca08eae09a2083fd5b430ce2a1faf86721a46bf">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_93d591cc80bb8e88c52615731d67acd745f0a0da/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/e6640851e924df98275fec95b1598092ccf84f9b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a2f3cb3df170666c6db106758a97d3a91b30d585">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d9863438f2980997bfc69ae8a8c440f442887751/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-SinaWeibo-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e8408628154b6e153c46dc0217cfa4b6ed0694b9">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-SinaWeibo-2.8.2_204ee554a95c2e86cb19011bb62291739cfcab38/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Yixin-Moments-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cf87b8fa6dee00b78e51507bc0917623684eb675">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Yixin-Moments-2.8.2_1e175e0e87f430ea4947c20ccf18efc6fe51ab7d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.2.4_3b35599658679395b47c919440ceebbbf019f5d8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Wechat-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f3f9d8cdaf36e449309698b6d3ec46fd47e4e14c">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Wechat-2.8.2_4e4c4a3fe4834c19513d522cad8021977b054a9c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-GooglePlus-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6fa772f8a3b704528e5dd015ddaf3b55b1229ed6">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-GooglePlus-2.8.2_0f2f8257e210d7d976163d992936b5b2b3db41d1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/f77cdd36900d190f3d71a9cd0ada00ead570cbad/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_57b4c59415fcde67eb275c1186ed5f25167ab76b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/0a7f362534753a927151ead3bb763498f15e94b8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8add8f3c72279ea487432b6b4abd8570248b609d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/99b99c05f3de986cc5305b11e72851d0eba05c94/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53d90ff407f40c6e7d127a137303ccb95e5df6bf">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c92001294b6fcba3d71b14f5d04628b9aa2587dd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.neovisionaries/nv-websocket-client/1.31/e101d5221d6315ba4165193e912c0cebe5ef50d5/nv-websocket-client-1.31.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e101d5221d6315ba4165193e912c0cebe5ef50d5">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/nv-websocket-client-1.31_9bf24eddc4fa9aa6d4bdd052d4dd7a3594ce64e1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Alipay-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="436a2c5270cc10b2c47eaa36f0eb18e79550532e">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Alipay-2.8.2_0822092e7e54beea5d7f7b744a2efab3688e30c7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Line-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="36457ff64eaabde8214aed5d26341d842c814d9a">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Line-2.8.2_35b7ffaafbeefb3773ee863d4515cedd293ceb04/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.5.0/bb7d4d96e780e8ef4f275c7d8dd3ef2883ddf99a/okio-1.5.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bb7d4d96e780e8ef4f275c7d8dd3ef2883ddf99a">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.5.0_9f5e5d9e0419ec32b10ed3519b6bd6eae449d9d9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Flickr-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1b041a116999434248ef1eacfb77e0b9f72b096e">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Flickr-2.8.2_2d236acf01d8fe9eec2d88058f9ac90898658044/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Youtube-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="73ab3b30c4abc4411363bbdb899b3922611bce42">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Youtube-2.8.2_3e40095a145833c6dc09de3a28094c1648361c8f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Pocket-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="17e1d58108316a0474729f3c48f1509d2413bde1">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Pocket-2.8.2_d2e99ccd7c26a3554130933bf51a31b6142cf876/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Douban-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a168bd443319d83bd564894096c3288359f89c40">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Douban-2.8.2_ddbb3fe37fee8128ef044160b80b6ec4b7524327/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/82fde66612752f1179382b4e864b4f9554859822/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="978ba04cd179b5fc1f832074cc7c6218dac984d3">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e47ba01eb2c9af505d31e86d3788a124dcc30c81/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/2fbcb40fdf1e7b689de7f4f56fca8bc97ad26488/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c9c7e3f3f52b9e47fdb6820929b6c59a9523b54f">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fd860ee5d7d1c2ef3e277a394e98326864b8e09a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/77b24afb6ff1ed5fdf2cf5d66f34a7c41fdb7c70/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9068775bb0941e0fc1d4ff9adbf5d73475794955">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5c014e41d17674c4915663da4a7c0932e174b309/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/robotium-solo-5.5.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b5637ed6e0bf430a7f1296108ec6f8bc7adfb01e">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/robotium-solo-5.5.4_dad4e88822e9db7892738c1d0b377285c5928358/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.tencent.tinker/tinker-commons/1.7.6/794285a3640b3f8712a5fb3debc2d6437e364110/tinker-commons-1.7.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="794285a3640b3f8712a5fb3debc2d6437e364110">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/tinker-commons-1.7.6_83402edf4d8d18c5b617ce521de1f506c516c995/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-WhatsApp-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="68f5fc2b9ab8a00f650f31a10034708dbd7a501e">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-WhatsApp-2.8.2_e6b9a540b48275e3d0516fee7fedff93f1be74c4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.squareup.haha/haha/1.1/b7b2e61ee1ad2d1ac6ae3122de9c940fb0d0e635/haha-1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b7b2e61ee1ad2d1ac6ae3122de9c940fb0d0e635">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/haha-1.1_09001acbd9c6cb907a51352b2f68044a415512ce/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Dingding-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0970c67cdcab38902701b010a71c454f5d5a1dee">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Dingding-2.8.2_d0a71276f3d0625c9234f0416df6f6a64a63f132/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/b2acc2ca4324bcdc30bd6b72e78172831185800c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5079e5fd491e9cda6597074c383db035e25e4696">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ebd44a0900031337cf32367f803e074271730978/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/1429700e2993bd365e77c3314a5f95389f60aed8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5ab7b6af3e80111065d8aae2ab9694939bf4d289">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f604a09c0488a0ca42b592e62f188900a91509c2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-KakaoTalk-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7ee84ad1211b3d649fac6257103ac60529b903ec">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-KakaoTalk-2.8.2_d9d8339e18f54f9e11081508398d9798db6caef6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/unity-classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="70f91f02a166596e7391b89cd7e51575e325357b">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/unity-classes_a0ced26cea4c3fd2a76d781beb9ec423a816308d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Linkedin-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9a28e7f4e672866a8f89a5244125df6926a229d3">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Linkedin-2.8.2_bcd8fb2fa578fd9e024b355e0679ce2e1aba8bfd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/MobTools-2017.0322.0931.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="242b3a8f9b6b47d2ea8cf932cd978a5b6651d22a">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/MobTools-2017.0322.0931_70f6597f3486d99f946aa62bd5ed566edcc3d0b0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/96c476c414df7d2122c120797eb4c25c64d4a872/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e9102e25fc568fd069ef053bdf766f966a9530a3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-FacebookMessenger-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b77d18990230e781457d60f2309a718fdf6b22a">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-FacebookMessenger-2.8.2_4d3effc38d51478dd7dd946834385e4f06c475f6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/b5de063fcce99518ec9e330d8df993459a80591b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="709aa1ae54ed9817c59948c8cc9152c2e5851b35">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9888b4ea317ddb86df75f35b2664c0baec9967d6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/3926444ad6b9bd3cb83f54599658d9cbd9be0469/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_df06a3f58da0b5387eb41f267d83bdf6e940100f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.networkbench.newlens.agent.android/nbs.newlens.agent/2.4.4/cc45f4416a1b845745d09f0e96d2ad341b523c41/nbs.newlens.agent-2.4.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cc45f4416a1b845745d09f0e96d2ad341b523c41">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/nbs.newlens.agent-2.4.4_59ca39c3c35859d088aa7266e3ee4cfee649afd1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Wechat-Moments-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1b40dd5cc7381571d1cc57e03fcf328598d559c4">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Wechat-Moments-2.8.2_2461df9e9bcfd518f6cc9fa0520ec5e0c758d5ad/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-ShortMessage-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e19bf208ba05ecd52d4301461b6570b26ab3dcb1">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-ShortMessage-2.8.2_ccff73cca135c257955c8f5133649ced20158737/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/429b514d9550ff82f36bd649b1eaddf78aea5049/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="97c7be4a90a5495a6e3beda08120d0fa106cfdcc">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2454bd8963321e8c90edeece45cd0a3f826b0365/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/MobCommons-2017.0322.0931.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d49d36ec407502d69c217d81a87283eba9c746b2">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/MobCommons-2017.0322.0931_f7c1f3208f7b828dc388d93b89a2a513c3e50590/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Instapaper-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="512a1f88f4aab8d844259e81ed3bf4f3d1308660">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Instapaper-2.8.2_9fd3eedd9266ceab511b9e1d189db54c451f9505/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_657e8b11105b5d7371c9e2f4ae249156a870e6f9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/9ff8522c6a955a38fa56843163706531989caae7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1c3b9743fe8bb166a90a7e98b9b9f1f8021d80cd">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5e1fca737e70e54207c6cdf3bf8aade5443d4f23/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/httpmime-4.1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ed8b5ee0167cb27dea55851259eb34b609f31df0">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/httpmime-4.1.2_1a6ff2f4285956ebd80f1203e1df678c590dc3e3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/e8c1ebd329f090860f7c8fb7c71481e3e36f3597/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5d5d5ac7204a49183f5d30f215fe431349cff26d">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6b3ff8d001859d9590422d39473c1a9c60ae4d7b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-VKontakte-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="19140c0aa3b019bedeeb14aa605cdfb09eb05d4a">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-VKontakte-2.8.2_54fad422749976d134d8dfb8f10d4e05134fc824/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Yixin-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6f170b37c2a4a6473fab9e0f3811426d2e418929">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Yixin-2.8.2_f2e0e8ff1ee1c9b97cb2a47f7a01e352a315755d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Wechat-Core-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="002b4be4096d7ce75e969449fc81b62e312748a6">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Wechat-Core-2.8.2_e0e627ea7a2a3207ddf5fa8e6c974a30559de506/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-QZone-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dc2c7e7eaa2bad4c5333b6471d388a64df781d1b">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-QZone-2.8.2_0aa7a408aa911d08fa34a71fef8f9c39ac106302/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/19.0/6ce200f6b23222af3d8abb6b6459e6c44f4bb0e9/guava-19.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6ce200f6b23222af3d8abb6b6459e6c44f4bb0e9">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/guava-19.0_953b12547e12245ee58dff59478ae9448b2dac9b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/filecache.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4983459f2d6e32fc150bce69c366daf0c8e2ac8b">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/filecache_036d44794705bc1b393d9179f6de9b64f031d534/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Tumblr-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9331e1f4424f3423efe3f442596db99da17bf9ad">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Tumblr-2.8.2_3476b676dafc440d7b64c4138a47fb22a1ea9781/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Renren-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2bc0f11cda50bbacf737dcc3e882611dec6f5029">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Renren-2.8.2_478b6d28439c377f536d1be3782b078509432f6c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Alipay-Core-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="06bd4cf516c4809b57eb40ae74a8a29e1d6ffcaf">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Alipay-Core-2.8.2_902a127181961434fc026969ebc304c8807011e7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Wechat-Favorite-2.8.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1af0c437d793e4f8689be564e02b8c2dec50488a">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Wechat-Favorite-2.8.2_13582e892dd1165ef012fc9c032431e96d026b3a/classes.dex" />
+    </item>
+
+</items>
