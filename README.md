@@ -7,4 +7,5 @@
 ### Update Notes
 ###### 27082018 
 > - Commented abiFilters "armeabi-v7a" for faster testing on emulator    
-> - Added gitignore file
+> - Added gitignore file    
+> - Fixed Duplicate dependency in build.gradle multidex:1.0.1 and 1.0.3 (1.0.1 is used)
