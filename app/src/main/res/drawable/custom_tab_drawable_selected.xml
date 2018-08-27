@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/tab_bar_background"/>
+        </shape>
+    </item>
+    <item
+        android:drawable="@mipmap/tab_yellow_bar"
+        android:bottom="0dp"
+        android:width="45dp"/>
+</layer-list>

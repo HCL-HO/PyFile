@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_back_white"
+                android:paddingLeft="-40dp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="手机绑定"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/whole">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relativeLayout3"
+                    android:layout_marginTop="24dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_form_showemail_phone"
+                        android:textSize="14dp"
+                        android:id="@+id/tv_phone"
+                        android:textColor="#9e9e9e"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="14dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/phone_error"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="14dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@mipmap/icon_exclaim"
+                            android:layout_marginRight = "10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/valid_sms_sms_error"
+                            android:textColor="#E9516A"
+                            android:textSize="14dp"
+                            android:id="@+id/phone_error_msg"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/phone_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="#e7f5f6"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:inputType="phone"
+                        android:textSize="18dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#08A09D"
+                        android:id="@+id/setting_phone"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:focusable="false"
+                        android:enabled="false"
+                        android:imeOptions="actionDone"/>
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@mipmap/icon_cross"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/phone_btn_delete"
+                        android:layout_marginRight="16dp"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:textSize="14dp"
+                    android:id="@+id/phone_remark"
+                    android:layout_marginTop="4dp"
+                    android:visibility="visible"/>
+
+                <LinearLayout
+                    android:id="@+id/confirm_send_captcha"
+                    android:layout_width="328dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rect_green_border"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image_send_captcha"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:padding="4dp"
+                        android:src="@mipmap/icon_confirm"/>
+
+                    <TextView
+                        android:id="@+id/textView_send_captcha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="@string/activity_form_showemail_send_captcha"
+                        android:textColor="#08A09D"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/activity_form_showemail_captcha"
+                            android:textSize="14dp"
+                            android:textColor="#9e9e9e"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="14dp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/captcha_error"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="14dp"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:src="@mipmap/icon_exclaim"
+                                android:layout_marginRight = "10dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/valid_sms_sms_error"
+                                android:textColor="#E9516A"
+                                android:textSize="14dp"
+                                android:id="@+id/captcha_error_msg"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <com.hec.app.util.LastInputEditText
+                            android:id="@+id/setting_captcha_1"
+                            android:layout_width="32.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="7dp"
+                            android:gravity="center"
+                            android:background="@drawable/background_code_input"
+                            android:textSize="18dp"
+                            android:textColor="#08A09D"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:maxLength="2"
+                            android:digits="1234567890"
+                            android:singleLine="true"
+                            android:imeOptions="actionDone"/>
+
+                        <com.hec.app.util.LastInputEditText
+                            android:id="@+id/setting_captcha_2"
+                            android:layout_width="32.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="7dp"
+                            android:gravity="center"
+                            android:background="@drawable/background_code_input"
+                            android:textSize="18dp"
+                            android:textColor="#08A09D"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:maxLength="2"
+                            android:digits="1234567890"
+                            android:singleLine="true"
+                            android:imeOptions="actionDone"/>
+
+                        <com.hec.app.util.LastInputEditText
+                            android:id="@+id/setting_captcha_3"
+                            android:layout_width="32.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="7dp"
+                            android:gravity="center"
+                            android:background="@drawable/background_code_input"
+                            android:textSize="18dp"
+                            android:textColor="#08A09D"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:maxLength="2"
+                            android:digits="1234567890"
+                            android:singleLine="true"
+                            android:imeOptions="actionDone"/>
+
+                        <com.hec.app.util.LastInputEditText
+                            android:id="@+id/setting_captcha_4"
+                            android:layout_width="32.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="7dp"
+                            android:gravity="center"
+                            android:background="@drawable/background_code_input"
+                            android:textSize="18dp"
+                            android:textColor="#08A09D"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:maxLength="2"
+                            android:digits="1234567890"
+                            android:singleLine="true"
+                            android:imeOptions="actionDone"/>
+
+                        <com.hec.app.util.LastInputEditText
+                            android:id="@+id/setting_captcha_5"
+                            android:layout_width="32.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="7dp"
+                            android:gravity="center"
+                            android:background="@drawable/background_code_input"
+                            android:textSize="18dp"
+                            android:textColor="#08A09D"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:maxLength="2"
+                            android:digits="1234567890"
+                            android:singleLine="true"
+                            android:imeOptions="actionDone"/>
+
+                        <com.hec.app.util.LastInputEditText
+                            android:id="@+id/setting_captcha_6"
+                            android:layout_width="32.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="7dp"
+                            android:gravity="center"
+                            android:background="@drawable/background_code_input"
+                            android:textSize="18dp"
+                            android:textColor="#08A09D"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:maxLength="2"
+                            android:digits="1234567890"
+                            android:singleLine="true"
+                            android:imeOptions="actionDone"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/confirm_change"
+                        android:layout_width="328dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="24dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/rect_green_border"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:clickable="true">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:padding="4dp"
+                            android:id="@+id/comfirm_img"
+                            android:src="@mipmap/icon_confirm" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/userName"
+                            android:text="@string/confirm_send"
+                            android:textSize="16dp"
+                            android:textColor="#08A09D"
+                            android:fontFamily="sans-serif-light"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

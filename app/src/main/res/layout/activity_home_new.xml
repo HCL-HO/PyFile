@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+>
+<LinearLayout
+    android:id="@+id/home_main_layout"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/appBar"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/logo" />
+
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:id="@+id/imgPersonalCenter"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/icon_personal" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/main_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/tab_menu">
+                </FrameLayout>
+
+                <RadioGroup
+                    android:id="@+id/tab_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dip"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:background="#0a2644">
+
+                    <RadioButton
+                        android:id="@+id/rbHome"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableTop="@drawable/tab_selector_home"
+                        android:gravity="center_horizontal|bottom"
+                        android:textColor="@drawable/color_radiobutton"
+                        android:text="首页"
+                        android:textSize="10sp"
+                        android:drawablePadding="3dp"
+                        android:background="@null" />
+
+                    <RadioButton
+                        android:id="@+id/rbLottery"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/tab_selector_lottery"
+                        android:gravity="center_horizontal|bottom"
+                        android:textColor="@drawable/color_radiobutton"
+                        android:text="彩票大厅"
+                        android:textSize="10sp"
+                        android:drawablePadding="3dp"
+                        android:background="@null" />
+
+                    <RadioButton
+                        android:id="@+id/rbTrend"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/tab_selector_trend"
+                        android:gravity="center_horizontal|bottom"
+                        android:text="走势图"
+                        android:textSize="10sp"
+                        android:drawablePadding="3dp"
+                        android:textColor="@drawable/color_radiobutton"
+                        android:background="@null" />
+
+                    <!--<RadioButton-->
+                        <!--android:id="@+id/rbBrand"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:button="@null"-->
+                        <!--android:drawableTop="@drawable/tab_selector_brand"-->
+                        <!--android:gravity="center_horizontal|bottom"-->
+                        <!--android:text="星女孩"-->
+                        <!--android:textSize="10sp"-->
+                        <!--android:drawablePadding="3dp"-->
+                        <!--android:textColor="@drawable/color_radiobutton"-->
+                        <!--android:background="@null" />-->
+                    <RadioButton
+                        android:id="@+id/rb_guaji"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/tab_selector_brand"
+                        android:gravity="center_horizontal|bottom"
+                        android:text="挂机"
+                        android:textSize="10sp"
+                        android:drawablePadding="3dp"
+                        android:textColor="@drawable/color_radiobutton"
+                        android:background="@null"/>
+
+                    <RadioButton
+                        android:id="@+id/rbWebchat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/tab_selector_webchat"
+                        android:gravity="center_horizontal|bottom"
+                        android:text="在线客服"
+                        android:textSize="10sp"
+                        android:drawablePadding="3dp"
+                        android:textColor="@drawable/color_radiobutton"
+                        android:background="@null"/>
+                    <!-- 挂机软件 -->
+                    <!--
+                    <RadioButton
+                        android:id="@+id/rb_guaji"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableTop="@drawable/tab_selector_webchat"
+                        android:gravity="center_horizontal|bottom"
+                        android:text="挂机软件"
+                        android:textSize="10sp"
+                        android:drawablePadding="3dp"
+                        android:textColor="@drawable/color_radiobutton"
+                        android:background="@null"/>
+                    -->
+                </RadioGroup>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+</LinearLayout>
+    </RelativeLayout>

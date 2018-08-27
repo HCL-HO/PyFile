@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="328dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/logo_transfer"
+            android:layout_marginLeft="35dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="25dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="请确认转账信息"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/transfer_dialog_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="类型: 真人娱乐"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/transfer_dialog_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="转账金额: 0.000元"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1" android:gravity="center"
+            android:background="#f2f2f2"
+            android:id="@+id/transfer_no">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textSize="14dp"/>
+
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight = "1" android:gravity="center"
+            android:background="#e2e2e2"
+            android:id="@+id/transfer_yes">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_yes_grey"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 确认"
+                android:textSize="14dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

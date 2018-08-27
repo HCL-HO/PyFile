@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:drawable="@mipmap/btn_add_friend_focus"/>
+    <item android:state_pressed="true" android:drawable="@mipmap/btn_add_friend_focus"/>
+    <item android:drawable="@mipmap/btn_add_friend"/>  //means normal
+</selector>

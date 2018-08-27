@@ -1,0 +1,502 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="65dp"
+    android:orientation="vertical"
+    tools:context="com.hec.app.fragment.InfoCompleteFragment"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_below="@id/recharge_choice"
+            android:background="#F6F0D8"
+            android:gravity="center_vertical">
+            <ImageView
+                android:src="@mipmap/icon_remind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/initInfo_hint"
+                android:textSize="14sp"
+                android:textColor="#b5944e"
+                android:layout_marginLeft="8dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="2dp"
+                android:src="@mipmap/icon_tuto_1"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_infocomplete_moneypwd_title"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:layout_marginLeft="7dp"/>
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_infocomplete_pwd_tag"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/gray"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:orientation="horizontal"
+            android:layout_below="@id/textview2_field"
+            android:id="@+id/rl1"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:ems="10"
+                android:background="@null"
+                android:paddingLeft="16dp"
+                android:id="@+id/new_initinfo_pwd"
+                android:textCursorDrawable="@drawable/textcursor"
+                android:hint="@string/fragment_infocomplete_pwd_hint"
+                android:textColorHint="@color/hint_word_gray"
+                android:textColor="@color/btn_light_green"
+                android:inputType="textPassword"
+                />
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/icon_cross"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/error_initinfo1"
+                android:textSize="16dp"
+                android:layout_marginRight="16dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_infocomplete_pwdconfirm_tag"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/gray"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:orientation="horizontal"
+            android:layout_below="@id/textview2_field"
+            android:id="@+id/rl2"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:ems="10"
+                android:background="@null"
+                android:paddingLeft="16dp"
+                android:id="@+id/new_initinfo_pwd_confrimed"
+                android:textCursorDrawable="@drawable/textcursor"
+                android:hint="@string/fragment_infocomplete_pwdconfirm_hint"
+                android:textColorHint="@color/hint_word_gray"
+                android:textColor="@color/btn_light_green"
+                android:inputType="textPassword"
+                />
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/icon_cross"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/error_initinfo2"
+                android:textSize="16dp"
+                android:layout_marginRight="16dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="2dp"
+                android:src="@mipmap/icon_tuto_2"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_infocomplete_ans_title"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:layout_marginLeft="7dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_infocomplete_problemone_tag"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/gray"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:orientation="horizontal"
+            android:layout_below="@id/textview2_field"
+            android:id="@+id/rl3"
+            android:layout_marginTop="16dp">
+
+            <Spinner
+                android:spinnerMode="dropdown"
+                android:id="@+id/initinfo_spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="16dp"
+                />
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/icon_cross"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="16dp"
+                android:layout_marginRight="16dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_infocomplete_ansone_tag"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/gray"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:orientation="horizontal"
+            android:id="@+id/rl4"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:ems="10"
+                android:background="@null"
+                android:paddingLeft="16dp"
+                android:id="@+id/initinfo_answer1"
+                android:textCursorDrawable="@drawable/textcursor"
+                android:hint="@string/fragment_infocomplete_ansone_tag"
+                android:textColorHint="@color/hint_word_gray"
+                android:textColor="@color/btn_light_green"
+                android:singleLine="true"
+                />
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/icon_cross"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/error_initinfo3"
+                android:textSize="16dp"
+                android:layout_marginRight="16dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_infocomplete_problemtwo_tag"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/gray"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:orientation="horizontal"
+            android:layout_below="@id/textview2_field"
+            android:id="@+id/rl5"
+            android:layout_marginTop="16dp">
+
+            <Spinner
+                android:spinnerMode="dropdown"
+                android:id="@+id/initinfo_spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="16dp"
+                />
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/icon_cross"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="16dp"
+                android:layout_marginRight="16dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_infocomplete_anstwo_tag"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/gray"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:orientation="horizontal"
+            android:id="@+id/rl6"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:ems="10"
+                android:background="@null"
+                android:paddingLeft="16dp"
+                android:id="@+id/initinfo_answer2"
+                android:textCursorDrawable="@drawable/textcursor"
+                android:hint="@string/fragment_infocomplete_anstwo_tag"
+                android:textColorHint="@color/hint_word_gray"
+                android:textColor="@color/btn_light_green"
+                android:singleLine="true"
+                />
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/icon_cross"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/error_initinfo4"
+                android:textSize="16dp"
+                android:layout_marginRight="16dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="2dp"
+                android:src="@mipmap/icon_tuto_3"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_infocomplete_email_title"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:layout_marginLeft="7dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_infocomplete_email_tag"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/gray"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:orientation="horizontal"
+            android:layout_below="@id/textview2_field"
+            android:id="@+id/rl7"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:ems="10"
+                android:background="@null"
+                android:id="@+id/init_email"
+                android:paddingLeft="16dp"
+                android:textCursorDrawable="@drawable/textcursor"
+                android:hint="@string/fragment_infocomplete_email_hint"
+                android:textColorHint="@color/hint_word_gray"
+                android:textColor="@color/btn_light_green"
+                android:imeOptions="flagNoExtractUi"
+                android:singleLine="true"
+                />
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/icon_cross"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/error_initinfo5"
+                android:textSize="16dp"
+                android:layout_marginRight="16dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_infocomplete_carefully_choose"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/gray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_infocomplete_phone_tag"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/gray"
+            android:visibility="visible"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:orientation="horizontal"
+            android:layout_below="@id/textview2_field"
+            android:id="@+id/rl8"
+            android:layout_marginTop="16dp"
+            android:visibility="visible">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:ems="10"
+                android:background="@null"
+                android:id="@+id/init_sms"
+                android:paddingLeft="16dp"
+                android:textCursorDrawable="@drawable/textcursor"
+                android:hint="@string/fragment_infocomplete_phone_hint"
+                android:textColorHint="@color/hint_word_gray"
+                android:textColor="@color/btn_light_green"
+                android:imeOptions="flagNoExtractUi"
+                android:singleLine="true"
+                android:inputType="phone"
+                />
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/icon_cross"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/error_initinfo6"
+                android:textSize="16dp"
+                android:layout_marginRight="16dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_infocomplete_phone_remark"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/gray"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|bottom"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="328dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/background_button_green_stroke_light_green"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:id="@+id/botton_btn_next"
+                android:clickable="true"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/confirm_change"
+                    android:text="@string/fragment_infocomplete_next"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="sans-serif-light"/>
+                <ImageView
+                    android:src="@mipmap/btn_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/btnText"
+                    android:layout_toEndOf="@+id/btnText" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

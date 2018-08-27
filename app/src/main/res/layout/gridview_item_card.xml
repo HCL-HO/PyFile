@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="120dp"
+    android:id="@+id/cardView">
+
+    <ImageView
+        android:id="@+id/imgBankcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_bankcard_red"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/cardBanker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="农业银行"
+        android:textColor="#a0ffffff"
+        android:textSize="10sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/cardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="621111111111****"
+        android:textColor="#a0ffffff"
+        android:textSize="10sp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginBottom="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/cardHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Joshua"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="18dp"
+        android:layout_marginBottom="2dp"
+        android:layout_above="@id/cardNumber"/>
+
+    <ImageView
+        android:id="@+id/imgBankcardDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/icon_bankcard_delete"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

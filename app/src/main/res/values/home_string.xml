@@ -1,0 +1,19 @@
+<resources>
+    <string name="bulletin">公告</string>
+    <string name="today_winner">今日彩神</string>
+    <string name="my_big_lottery">我的大奖</string>
+    <string name="quick_entrance">快捷入口</string>
+    <string name="balance">余额</string>
+    <string name="frozen">冻结</string>
+    <string name="profitloss">亏盈</string>
+    <string name="lottery_history">投注记录</string>
+    <string name="after_history">追号记录</string>
+    <string name="money_detail">资金明细</string>
+    <string name="agent_center">代理中心</string>
+    <string name="artical">购彩交流</string>
+    <string name="return_to_lottery">返回当前投注</string>
+    <string name="settings">设置</string>
+    <string name="internal_msg">站内信</string>
+    <string name="recharge">充值</string>
+    <string name="withdraw">提现</string>
+</resources>

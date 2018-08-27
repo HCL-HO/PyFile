@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0c8f8f"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_gravity="top"
+            android:layout_height="24dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/rect_play_description"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="玩法介绍"
+                android:textColor="#0c8f8f" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPlayDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+            android:text="每位至少选择"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/rect_play_description"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中奖举例"
+                android:textColor="#0c8f8f"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvLotteryExample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="每位至少选择"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

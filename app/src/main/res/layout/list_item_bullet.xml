@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/img_bullet"
+        android:paddingLeft="10dp"
+        android:paddingTop="18dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/icon_annoucement"/>
+    <ImageView
+    android:id="@+id/img_new"
+    android:paddingLeft="10dp"
+    android:paddingTop="18dp"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+        android:visibility="visible"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/img_bullet"
+        android:paddingTop="21dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:id="@+id/bullet_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hehe"
+            android:textColor="#202020"
+            android:textSize="18dp"/>
+        <View
+            android:layout_width="250dp"
+            android:layout_height="8dp"
+            android:background="#ffffff"
+            android:visibility="invisible"
+            android:id="@+id/view_miss2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/bullet_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wxjfafieoiwaoejfoeoa"
+            android:textColor="#606060"
+            android:textSize="14dp"/>
+        </LinearLayout>
+</RelativeLayout>
+    <View
+        android:layout_width="250dp"
+        android:layout_height="8dp"
+        android:background="#ffffff"
+        android:visibility="invisible"
+        android:id="@+id/view_miss4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/bullet_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2015/12/12 10:30"
+        android:layout_gravity="right"
+        android:textColor="#cfcfcf"
+        android:paddingRight="16dp"
+        android:textSize="16dp"/>
+    <View
+        android:layout_width="250dp"
+        android:layout_height="16dp"
+        android:background="#ffffff"
+        android:visibility="invisible"
+        android:id="@+id/view_miss3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <View
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:background="#cfcfcf"
+        android:layout_gravity="right"
+        android:id="@+id/view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</LinearLayout>

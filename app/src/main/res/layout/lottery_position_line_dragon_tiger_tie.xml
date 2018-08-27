@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:tag="ballLinearLayout">
+
+        <org.apmem.tools.layouts.FlowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:tag="ballLayout">
+
+            <com.hec.app.framework.widget.CircleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="龙"
+                app:normalBackground="@mipmap/pk10_dragon"
+                app:selectedBackground="@mipmap/pk10_dragon_selected" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_vs"
+                    android:scaleX="1.2"
+                    android:scaleY="1.2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <com.hec.app.framework.widget.CircleButton
+                    style="@style/Lottery_Number_Style"
+                    android:layout_gravity="center"
+                    android:text="和"
+                    android:tag="和"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <com.hec.app.framework.widget.CircleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="虎"
+                app:normalBackground="@mipmap/pk10_tiger"
+                app:selectedBackground="@mipmap/pk10_tiger_selected" />
+        </org.apmem.tools.layouts.FlowLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#03254b"/>
+
+</LinearLayout>

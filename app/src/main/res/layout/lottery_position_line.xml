@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Lottery_PlayNum_Style"
+            android:tag="playNum"
+            android:text="万位" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:tag="quickSelect"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Lottery_Quick_Select_Style"
+                android:tag="large"
+                android:text="大" />
+
+            <TextView
+                style="@style/Lottery_Quick_Select_Style"
+                android:tag="small"
+                android:text="小" />
+
+            <TextView
+                style="@style/Lottery_Quick_Select_Style"
+                android:tag="all"
+                android:text="全" />
+
+            <TextView
+                style="@style/Lottery_Quick_Select_Style"
+                android:tag="single"
+                android:text="单" />
+
+            <TextView
+                style="@style/Lottery_Quick_Select_Style"
+                android:tag="double"
+                android:text="双" />
+
+            <TextView
+                style="@style/Lottery_Quick_Select_Style"
+                android:tag="clear"
+                android:text="清" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:tag="ballLinearLayout"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="36dp"
+            android:layout_height="18dp"
+            android:background="@drawable/rect_gray"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                style="@style/Lottery_Choose_Text_Style"
+                android:text="选号" />
+        </LinearLayout>
+
+        <org.apmem.tools.layouts.FlowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="ballLayout"
+            android:layout_marginLeft="12dp">
+
+        </org.apmem.tools.layouts.FlowLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#03254b"
+        android:layout_height="4dp"/>
+
+</LinearLayout>

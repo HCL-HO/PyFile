@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@mipmap/background_money_detail"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/money_balance"
+            android:textColor="@color/money_detail_title_white"
+            android:textSize="12dp"
+            android:singleLine="false"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+                android:id="@+id/money_balance_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00.00"
+                android:textSize="24dp"
+                android:textColor="@color/money_detail_amount_white"
+                android:textIsSelectable="false"
+            android:gravity="center_horizontal"
+                android:layout_marginTop="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/money_profitloss"
+            android:textColor="@color/money_detail_title_white"
+            android:textSize="12dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="28dp" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="center_horizontal">
+
+
+                <TextView
+                    android:id="@+id/money_profitloss_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00.00"
+                    android:textSize="32dp"
+                    android:textColor="@color/money_detail_amount_white"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgIcon_up_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_up"
+                    android:layout_marginLeft="5dp" />
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_title"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/money_title_classify"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/money_classify"
+                android:textSize="14dp"
+                android:textStyle="normal"
+                android:textColor="@color/money_detail_title_gray"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="top"
+                android:gravity="top" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/moneySqureLayout"
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="24dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/content_money_detail_ll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_gravity="left|top"
+                        android:layout_marginLeft="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/money_bonus"
+                            android:textSize="12dp"
+                            android:textStyle="normal"
+                            android:textIsSelectable="false"
+                            android:textColor="@color/light_grey"
+                            android:gravity="left|top"
+                            android:layout_gravity="top" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@mipmap/icon_front"
+                            android:layout_marginLeft="60dp"
+                            android:paddingBottom="12dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=">"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textIsSelectable="false"
+                            android:textColor="@color/hint_word_gray"
+                            android:layout_marginLeft="80dp"
+                            android:layout_gravity="top"
+                            android:visibility="gone"
+                            />
+
+                    </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/money_bonus_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:text="00.00"
+                            android:textStyle="bold"
+                            android:textColor="@color/money_detail_amount_green"
+                            android:textSize="24dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="top" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/lighter_gray"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    android:id="@+id/content_money_detail_ll2"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/money_recharge"
+                            android:textSize="12dp"
+                            android:textStyle="normal"
+                            android:textIsSelectable="false"
+                            android:textColor="@color/light_grey"
+                            android:gravity="bottom|left" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@mipmap/icon_front"
+                            android:layout_marginLeft="53dp"
+                            android:paddingBottom="12dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text=">"
+                            android:textSize="12dp"
+                            android:textStyle="normal"
+                            android:textIsSelectable="false"
+                            android:textColor="@color/light_gray"
+                            android:gravity="center_horizontal|bottom"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/money_recharge_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:text="00.00"
+                            android:textStyle="bold"
+                            android:textColor="@color/money_detail_amount_green"
+                            android:textSize="22dp"
+                            android:gravity="bottom|left"
+                            android:layout_marginTop="10dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/lighter_gray"></View>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="right">
+
+                <LinearLayout
+                    android:id="@+id/content_money_detail_ll3"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="16dp"
+                        android:gravity="top">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/money_bet"
+                            android:textSize="12dp"
+                            android:textStyle="normal"
+                            android:gravity="left|top"
+                            android:textIsSelectable="false"
+                            android:textColor="@color/light_grey"
+                            android:layout_gravity="top" />
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@mipmap/icon_front"
+                            android:layout_marginLeft="60dp"
+                            android:paddingBottom="12dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text=">"
+                            android:textSize="12dp"
+                            android:textStyle="normal"
+                            android:textIsSelectable="false"
+                            android:textColor="@color/light_gray"
+                            android:gravity="center_horizontal|top"
+                            android:layout_gravity="top"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/money_bet_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:text="00.00"
+                            android:textStyle="bold"
+                            android:textColor="@color/money_detail_amount_green"
+                            android:textSize="24dp"
+                            android:textIsSelectable="false"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="top" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/lighter_gray"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    android:id="@+id/content_money_detail_ll4"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/money_withdraw"
+                            android:textSize="12dp"
+                            android:textStyle="normal"
+                            android:textIsSelectable="false"
+                            android:textColor="@color/light_grey"
+                            android:gravity="bottom|left" />
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@mipmap/icon_front"
+                            android:layout_marginLeft="53dp"
+                            android:paddingBottom="12dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text=">"
+                            android:textSize="12dp"
+                            android:textStyle="normal"
+                            android:textIsSelectable="false"
+                            android:textColor="@color/light_gray"
+                            android:gravity="center_horizontal|bottom"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/money_withdraw_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:text="00.00"
+                            android:textStyle="bold"
+                            android:textColor="@color/money_detail_amount_green"
+                            android:textSize="22dp"
+                            android:gravity="bottom|left"
+                            android:textIsSelectable="false"
+                            android:layout_marginTop="10dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="24dp"
+                android:layout_gravity="center_horizontal|bottom">
+
+                <LinearLayout
+                    android:id="@+id/button_money_recharge"
+                    android:layout_width="104dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rect_yellow"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/icon_recharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="true"
+                        android:layout_marginRight="8dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/money_button_recharge"
+                        android:gravity="center"
+                        android:textSize="14dp"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:singleLine="false" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="24dp"
+                android:layout_gravity="bottom"
+                android:gravity="right">
+
+
+                <LinearLayout
+                    android:id="@+id/button_money_withdraw"
+                    android:layout_width="165dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rect_green"
+                    android:padding="4dp"
+                    android:orientation="horizontal"
+                    android:gravity="center|center_vertical">
+
+                    <ImageView
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/icon_withdraw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/money_button_withdraw"
+                        android:textColor="@color/white"
+                        android:elegantTextHeight="false"
+                        android:gravity="center" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

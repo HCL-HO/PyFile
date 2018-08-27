@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.TransferDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_back_white"
+                    android:paddingLeft="-40dp" />
+
+                <TextView
+                    android:id="@+id/activity_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/activity_transderdetail_title"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:background="@mipmap/img_record_header_bg">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="128dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/transfer_detail_image"
+                        android:layout_width="100dp"
+                        android:layout_height="73dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@mipmap/transfer_realman"/>
+
+                    <TextView
+                        android:id="@+id/transfer_playtype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/activity_transderdetail_realman_playtype"
+                        android:textSize="12sp"
+                        android:textColor="#3d5a79"
+                        android:layout_gravity="center"
+                        />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/record_header_label1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/activity_transderdetail_realman_available"
+                        android:textSize="12sp"
+                        android:textColor="#3d5a79"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:id="@+id/transfer_detail_head_value1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="328080.00"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#ffffff"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/record_header_label1"
+                        />
+
+                    <TextView
+                        android:id="@+id/record_header_label2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/activity_transderdetail_freeze"
+                        android:textSize="12sp"
+                        android:textColor="#3d5a79"
+                        android:visibility="gone"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/transfer_detail_head_value1"/>
+                    <TextView
+                        android:id="@+id/transfer_detail_head_value2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="300.00"
+                        android:visibility="gone"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#ffffff"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/record_header_label2"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/transfer_text_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_transderdetail_realman_out"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/gray"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:orientation="horizontal"
+                android:id="@+id/rl2"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:ems="10"
+                    android:background="@null"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:id="@+id/transfer_moneysum_edittext1"
+                    android:textCursorDrawable="@drawable/textcursor"
+                    android:hint="0"
+                    android:textColorHint="@color/hint_word_gray"
+                    android:textColor="@color/btn_light_green"
+                    android:maxLength="5"
+                    android:inputType="number"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/transfer_button"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/transfer_button1"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/transfer_text_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_transderdetail_realman_in"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/gray"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:orientation="horizontal"
+                android:id="@+id/rl3"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:ems="10"
+                    android:background="@null"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:id="@+id/transfer_moneysum_edittext2"
+                    android:textCursorDrawable="@drawable/textcursor"
+                    android:hint="0"
+                    android:textColorHint="@color/hint_word_gray"
+                    android:textColor="@color/btn_light_green"
+                    android:maxLength="5"
+                    android:inputType="number"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/transfer_button"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/transfer_button2"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

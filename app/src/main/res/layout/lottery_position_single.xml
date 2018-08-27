@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="口"
+            android:textSize="10sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="将号码"
+            android:textSize="12sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#5e7c98"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="复制"
+            android:textSize="13sp"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="或手动输入下方区域"
+            android:textSize="12sp"
+            android:textColor="#5e7c98"
+            />
+    </LinearLayout>
+    <EditText
+        android:background = "@drawable/touming_input"
+        android:id="@+id/lottery_input"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="104dp"
+        android:digits="1234567890,; \\\n"
+        android:layout_marginTop="14dp"
+        android:textColor="#ffffff"
+        android:gravity="top"
+        android:inputType="textNoSuggestions|text|textImeMultiLine"
+        android:imeOptions="actionDone"
+
+        />
+    <LinearLayout
+        android:id="@+id/layoutOptionContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:visibility="gone">
+
+        <CheckBox
+            style="@style/Lottery_Quick_Select_Style"
+            android:id="@+id/checkBoxTenThousandSigle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="TenThousand"
+            android:text="万" />
+
+        <CheckBox
+            style="@style/Lottery_Quick_Select_Style"
+            android:id="@+id/checkBoxThousandSigle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="Thousand"
+            android:text="千" />
+
+        <CheckBox
+            style="@style/Lottery_Quick_Select_Style"
+            android:id="@+id/checkBoxHundredSigle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="Hundred"
+            android:text="百" />
+
+        <CheckBox
+            style="@style/Lottery_Quick_Select_Style"
+            android:id="@+id/checkBoxTenSigle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="Ten"
+            android:text="十" />
+
+        <CheckBox
+            style="@style/Lottery_Quick_Select_Style"
+            android:id="@+id/checkBoxOneSigle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="One"
+            android:text="个" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/niantie"
+            style="@style/single_double_selector"
+            android:layout_width="65dp"
+            android:layout_height="18dp"
+            android:text="粘贴"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:layout_marginLeft="200dp"/>
+
+        <TextView
+            android:id="@+id/qingkong"
+            style="@style/single_bg_selector"
+            android:layout_width="65dp"
+            android:layout_height="18dp"
+            android:text="清空"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:id="@+id/check_group"
+        android:layout_marginTop="8dp"
+        >
+        <CheckBox
+            android:id="@+id/check_ten_thousand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="万"
+            android:layout_marginRight="8dp"
+            android:buttonTint="@color/money_detail_amount_white"
+            android:textColor="@color/money_detail_amount_white"
+            />
+        <CheckBox
+            android:id="@+id/check_thousand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="千"
+            android:layout_marginRight="8dp"
+            android:buttonTint="@color/money_detail_amount_white"
+            android:textColor="@color/money_detail_amount_white"
+            />
+        <CheckBox
+            android:id="@+id/check_hundred"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="百"
+            android:layout_marginRight="8dp"
+            android:buttonTint="@color/money_detail_amount_white"
+            android:textColor="@color/money_detail_amount_white"
+            />
+        <CheckBox
+            android:id="@+id/check_ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="十"
+            android:layout_marginRight="8dp"
+            android:buttonTint="@color/money_detail_amount_white"
+            android:textColor="@color/money_detail_amount_white"
+            />
+        <CheckBox
+            android:id="@+id/check_digit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个"
+            android:layout_marginRight="8dp"
+            android:buttonTint="@color/money_detail_amount_white"
+            android:textColor="@color/money_detail_amount_white"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="28dp">
+
+        <ImageView
+            android:id="@+id/sweet"
+            android:src="@mipmap/icon_sweet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="16dp"
+            android:text="温馨提示"
+            android:layout_marginLeft="5dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:editable="false"
+        android:clickable="false"
+        android:text="1.请把您已有的大底号码复制或者输入到上方的文本框中."
+        android:textSize="12sp"
+        android:textColor="#5e7c98"
+        android:paddingRight="3dp"
+        android:paddingLeft="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:editable="false"
+        android:textSize="12sp"
+        android:text="2.单注号码分割支持逗号(,),分号(;),空格( ),回车(换行)."
+        android:clickable="false"
+        android:textColor="#5e7c98"
+        android:paddingRight="3dp"
+        android:paddingLeft="30dp"/>
+</LinearLayout>

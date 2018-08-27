@@ -1,0 +1,373 @@
+<resources>
+
+    <style name="Bulletin_Title_Style">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#5E7C98</item>
+    </style>
+
+    <style name="Banner_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitXY</item>
+        <!--<item name="android:src">@mipmap/banner</item>-->
+    </style>
+
+    <style name="Middel_Title_Style">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_gravity">center</item>
+
+        <item name="android:textColor">#7297BA</item>
+    </style>
+
+    <style name="Middel_Small_Title_Style">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">#077E82</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="Middel_Content_Style">
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="Middel_Content_Style1">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#1a3957</item>
+    </style>
+
+    <style name="Bulletin_Style">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="Middle_Title_Rect_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@color/home_rect_bg_color</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="Middle_Rect_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">86dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:background">#19c7def2</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Quick_Entrance_Rect_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">@color/home_rect_bg_color</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Menu_Title_Rect_Style">
+        <item name="android:background">@drawable/rect_gray</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:layout_width">36dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Lottery_Follow">
+        <item name="android:background">@drawable/rect_dark_blue</item>
+        <item name="android:layout_height">12dp</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="single_double_selector">
+        <item name="android:background">@drawable/rect_theme_green</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_width">72dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="single_bg_selector">
+        <item name="android:background">@drawable/white_bg</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_width">36dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="lottery_input">
+        <item name="android:background">@drawable/touming_input</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_width">36dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Menu_Text_Style">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="Menu_Item_Style">
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:textColor">#202020</item>
+    </style>
+
+    <!--投注页面 -->
+    <style name="Lottery_Title_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:text">#ffffff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Lottery_Group_Head_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Lottery_List_Group_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginLeft">4dp</item>
+
+    </style>
+
+    <style name="Lottery_List_Item_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Lottery_List_Item_Des_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:textColor">#6f93b6</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Lottery_Head_Result_Loading_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">#08A09D</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+    <style name="Lottery_Head_Result_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">#08A09D</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:background">@mipmap/lottery_result_bg</item>
+    </style>
+
+    <style name="mmc_Lottery_Head_Result_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:textColor">#eeeeee</item>
+    </style>
+    <style name="Lottery_Quick_Select_Style">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#5E7C98</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Lottery_History_Result_Text_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#5E7C98</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="mmc_History_Result_Text_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#eeeeee</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="Lottery_PlayNum_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Lottery_Choose_Text_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#042442</item>
+    </style>
+
+    <style name="Lottery_Number_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">24sp</item>
+        <!--<item name="android:paddingBottom">7dp</item>-->
+    </style>
+
+    <style name="Lottery_Number_Style_SML">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <!--<item name="android:paddingBottom">7dp</item>-->
+    </style>
+
+    <style name="Lottery_EditText_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:gravity">center</item>
+        <!--<item name="android:textSize">14sp</item>-->
+        <item name="android:textColor">#202020</item>
+        <!--<item name="android:inputType">numberDecimal</item>-->
+        <item name="android:background">@drawable/bg_edittext</item>
+    </style>
+
+
+    <style name="Lottery_Settle_TextView_Amount_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">#9e9e9e</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Lottery_Settle_Text_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">#5E7C98</item>
+        <!--<item name="android:textSize">14sp</item>-->
+    </style>
+
+    <style name="Lottery_Settle_Number_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">9dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Lottery_Settle_Amount_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">#202020</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+
+    </style>
+
+    <style name="Lottery_Head_Text_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#5E7C98</item>
+        <item name="android:typeface"> serif</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+    <style name="Lottery_Head_Time_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">#04203C</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@mipmap/lottery_time</item>
+    </style>
+
+    <style name="Lottery_PlayType_Text_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#08a09d</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="Lottery_PlayTypeRadio_Text_Selected_Style">
+        <item name="android:layout_width">76dp</item>
+        <!--<item name="android:fontFamily">sans-serif</item>-->
+        <item name="android:layout_height">24dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Lottery_PlayTypeRadio_Text_Style">
+        <item name="android:layout_width">76dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#606060</item>
+    </style>
+
+    <style name="Lottery_Result_Issue_No_Style">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#7297BA</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <style name="Lottery_Result_Number_Style">
+        <item name="android:layout_width">158dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="Lottery_Result_Profit_Style">
+        <item name="android:layout_width">76dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#7297BA</item>
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+</resources>

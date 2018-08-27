@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/start_guide_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <RadioGroup
+        android:id="@+id/start_guide_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/start_guide_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/green"
+        android:gravity="center"
+        android:layout_marginBottom="45dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:text="开始"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:alpha="0"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:alpha="0"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <Button
+            android:id="@+id/skip"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/blue"
+            android:layout_marginRight="20dp"
+            android:text="skip"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:alpha="0.3"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

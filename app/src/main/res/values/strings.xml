@@ -1,0 +1,621 @@
+<resources>
+    <!--<string name="app_name">JX</string>-->
+    <string name="user_agent">Android Phone/1.0</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_zone">Zone</string>
+    <string name="title_activity_news_detail">新闻详情</string>
+    <string name="title_activity_login">用户登录</string>
+    <string name="empty">Empty</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="title_activity_my_account">MyAccountActivity</string>
+    <string name="title_activity_lottery">LotteryActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_new_lottery">NewLotteryActivity</string>
+    <string name="title_activity_lottery_settle">投注结算</string>
+    <string name="title_activity_test_drag">TestDragActivity</string>
+    <string name="title_activity_lottery_result">LotteryResultActivity</string>
+
+
+    <string name="title_activity_proxy_list">代理中心</string>
+    <string name="name">会员名</string>
+    <string name="amount">馀额 (元)</string>
+    <string name="profit">盈亏</string>
+    <string name="change">流水</string>
+    <string name="search_hint">快速搜索会员名称...</string>
+    <string name="add_friend">添加会员</string>
+    <string name="offline_transfer">下线转账</string>
+    <string name="proxy_link">代理连接</string>
+    <string name="title_activity_add_friend">添加会员</string>
+    <string name="confirm_add">确认添加</string>
+    <string name="confirm_pw_fail"> 两次密码输入不一致</string>
+    <string name="confirm_pw_stupid">系统侦测到您目前的密码太过简单，有安全疑虑为了保护您帐号的安全，建议您立刻进行密码变更</string>
+    <string name="confirm_money_pw_stupid">系统侦测到您目前的资金密码太过简单，有安全疑虑为了保护您帐号的安全，建议您立刻进行密码变更</string>
+    <string name="new_account">新会员账号</string>
+    <string name="select_return">选择返点</string>
+    <string name="password">密码</string>
+    <string name="confirm_password">密码确认</string>
+    <string name="no_this_userName">查无此帐号</string>
+    <string name="return_remark">返点还可在代理中心列表->会员姓名->详细 中修改</string>
+    <string name="offline_transfer_without_captcha_hint">未来30分钟内，免简讯验证</string>
+    <string name="offline_transfer_send_captcha_countdown">发送验证码至手机 (%1$d)</string>
+    <string name="offline_transfer_send_captcha_hint">发送验证码至手机</string>
+    <string name="offline_transfer_customer_service_hint">收不到验证码？</string>
+    <string name="offline_transfer_customer_service">请连系客服</string>
+    <string name="offline_transfer_phone_hint">请确保手机畅通，简讯接收验证码，于下方输入验证码</string>
+    <string name="offline_transfer_success">转帐成功!</string>
+    <string name="offline_transfer_phone_check_fail">未绑定手机号，无法下线转账</string>
+    <string name="offline_transfer_amount_limit">限额10~99999元</string>
+    <string name="offline_transfer_hint">*為了提升资金安全，請花几分钟进行手机绑定</string>
+
+    <!-- Strings related to record detail -->
+    <string name="record_list_title">记录列表</string>
+    <string name="record_detail_title">记录详情</string>
+    <string name="record_detail_withdraw_bill">撤单</string>
+    <string name="record_detail_return">返回</string>
+
+    <!-- Strings related to money detail -->
+    <string name="money_balance">账户余额(元)</string>
+    <string name="money_profitloss">盈亏(元)</string>
+    <string name="money_plus">+&#160;</string>
+    <string name="money_minus">-&#160;</string>
+    <string name="money_classify">分类明细</string>
+    <string name="money_bonus">奖金派送</string>
+    <string name="money_bet">投注支出</string>
+    <string name="money_recharge">充值&#038;转入</string>
+    <string name="money_withdraw">提现&#038;转出</string>
+    <string name="money_button_recharge">充值</string>
+    <string name="money_button_withdraw">提现</string>
+
+    <!-- Strings related to setting activity -->
+    <string name="title_setting">设置</string>
+    <string name="title_account_security">账号安全</string>
+    <string name="title_system">系统</string>
+    <string name="title_modify">修改</string>
+    <string name="title_login_pw">登录密码</string>
+    <string name="title_fund_pw">资金密码</string>
+    <string name="title_pw_email">保密设定</string>
+    <string name="title_my_nuckname">我的昵称</string>
+    <string name="title_bankcard_management">银行卡管理</string>
+    <string name="title_sys_notice">系统通知推送</string>
+    <string name="title_sys_update">系统更新</string>
+    <string name="title_current_ver">当前版本</string>
+    <string name="title_logout">登出</string>
+    <string name="title_change_ac_pw">修改登录密码</string>
+    <string name="title_change_fund_pw">修改资金密码</string>
+    <string name="title_check_email">查看密保邮箱</string>
+    <string name="title_success_change">密码修改成功</string>
+    <string name="cur_pw">当前密码</string>
+    <string name="new_pw">新密码</string>
+    <string name="re_new_pw">新密码确认</string>
+    <string name="remark1">建议使用字母加数字的组合以提高账户安全性</string>
+    <string name="remark2">该密码对资金安全非常重要，请务必牢记并妥善保管</string>
+    <string name="remark3">仅供找回密码使用，验证后不能修补，请慎重选择</string>
+    <string name="remark4">密保邮件不可修改，用于你的密码找回</string>
+    <string name="success_change">你的密码已成功修改</string>
+    <string name="back_setting">返回设置</string>
+    <string name="confirm_change">确认修改</string>
+    <string name="confirm_send">确认</string>
+    <string name="updated_version">当前已是最新版本</string>
+
+    <!-- Strings related to withdraw activity -->
+    <string name="withdraw_selection_notice">选择要提款的银行卡</string>
+    <string name="withdraw_title">提款</string>
+    <string name="withdraw_notice">长按或点击右上角图标进行删除操作</string>
+    <string name="withdraw_add">点击添加银行卡</string>
+    <string name="withdraw_notice2">绑定银行卡即可实现快速提现，一键到账</string>
+    <string name="withdraw_reminder">您还没有绑定银行卡哦~</string>
+    <string name="withdraw_bind_bank">绑定银行卡</string>
+
+    <!-- Strings related to recharge activity -->
+    <string name="title_activity_recharge_main">RechargeMainActivity</string>
+    <string name="title_activity_recharge_quick">RechargeQuickActivity</string>
+    <string name="title_activity_recharge_alipay">RechargeAlipayActivity</string>
+    <string name="title_activity_recharge_alipay_remind">RechargeAlipayRemindActivity</string>
+    <string name="title_activity_recharge_quick_mind">RechargeQuickMindActivity</string>
+    <string-array name="recharge_main_items"></string-array>
+    <string-array name="recharge_line">
+        <item>在线充值一</item>
+        <item>在线充值二</item>
+        <item>在线充值三</item>
+        <item>在线充值四</item>
+    </string-array>
+    <string name="recharge_main_choice">  选择充值方式</string>
+    <string name="recharge_main_sweet">  溫馨提醒</string>
+    <string name="recharge_main_sweet_content">1. 如通过在线充值方式，每天的充值处理时间为：早上00:00至次日23：59。\n2. 填写的金额与充值金额一致，否则无法到账。</string>
+    <string name="recharge_quick_login_textview">充值帐号</string>
+    <string name="recharge_quick_login_textview_cant_null">* 充值帐号不可为空</string>
+    <string name="recharge_quick_login_user">请输入您的充值帐号</string>
+    <string name="recharge_quick_choice_line">请选择充值线路</string>
+    <string name="recharge_quick_moneysum">充值金额</string>
+    <string name="recharge_quick_moneysum_textview_cant_null">* 金额不可为空</string>
+    <string name="recharge_quick_please_enter_moneysum">请输入您的充值金额</string>
+    <string name="recharge_quick_btn_500">500元</string>
+    <string name="recharge_quick_btn_1000">1000元</string>
+    <string name="recharge_quick_btn_2000">2000元</string>
+    <string name="recharge_quick_btn_5000">5000元</string>
+    <string name="recharge_quick_btn_10000">10000元</string>
+    <string name="recharge_quick_btn_20000">20000元</string>
+    <string name="recharge_quick_btn_30000">30000元</string>
+    <string name="recharge_quick_btn_40000">40000元</string>
+    <string name="recharge_quick_btn_49999">49999元</string>
+    <string name="recharge_quick_btn_rightnow_recharge">马上去充值</string>
+    <string name="recharge_quick_remind_textview">充值完成后请耐心等待几分钟\n或者在充值纪录中查看到帐号情況</string>
+    <string name="recharge_quick_remind_btn_keep_recharge">继续充值</string>
+    <string name="recharge_quick_remind_btn_recharge_record">查看充值纪录</string>
+    <string name="recharge_not_get_banklist">还未获取银行列表</string>
+    <string name="select_account_bank">选择开户银行</string>
+    <string name="bank_account_name">开户人姓名</string>
+    <string name="bank_account_number">银行卡号</string>
+    <string name="bank_account_number_confirm">银行卡号确认</string>
+    <string name="confirm_bind">确认绑定</string>
+    <string name="withdraw_amount">提款金額</string>
+    <string name="withdraw_card_info">提款银行卡信息</string>
+    <string name="withdraw_now">立即提款</string>
+    <string name="friendly_reminder">溫馨提示</string>
+    <string name="fund_pw_error">资金密码有误，请重新输入</string>
+    <string name="withdraw_reminder_1">同一银行一天最多提现120次。</string>
+    <string name="withdraw_reminder_2">消费不满充值的30%，有可能被怀疑套现或洗钱，导致账号冻结。</string>
+    <string name="success_bind">恭喜您，绑定成功</string>
+    <string name="bind_success">绑定成功</string>
+    <string name="now_go_withdraw">马上去提款</string>
+    <string name="withdraw_success">提款成功</string>
+    <string name="success_withdraw">恭喜您，提款成功</string>
+    <string name="this_time_withdraw">本次提款 :</string>
+    <string name="account_balance">账戶余额 :</string>
+    <string name="back_to_lottering">返回</string>
+    <string name="card_number">卡号:</string>
+    <string name="ac_user_name">戶主:</string>
+    <string name="withdraw_money">提款</string>
+    <string name="recharge_hint">请依此金额进行充值，小数不可舍去或修改，否则无法到账</string>
+
+
+    <!-- Strings related to proxy center -->
+    <string name="title_activity_add_success">添加会员成功</string>
+    <string name="congrats_add_success">恭喜你, 添加成功!</string>
+    <string name="back_to_proxy_list">返回代理中心</string>
+    <string name="title_activity_proxy_link">代理连接</string>
+    <string name="link_address">链结地址</string>
+    <string name="quotas">剩馀配额 : </string>
+    <string name="gen_link">生成链结</string>
+    <string name="copy_link">复制</string>
+    <string name="copied_to_clipboard">已复制链结到剪贴簿</string>
+    <string name="title_activity_download_transfer">会员详情</string>
+    <string name="monthly_change">本月流水 (元)</string>
+    <string name="monthly_profit">本月盈亏 (元)</string>
+    <string name="transfer">转账</string>
+    <string name="return_bracket">返点 (</string>
+    <string name="bracket_adjust">可修改)</string>
+    <string name="transfer_function">转账功能</string>
+    <string name="activate_transfer">开通</string>
+    <string name="title_activity_offline_transfer">下线转账</string>
+    <string name="transfer_into">转入会员账号</string>
+    <string name="transfer_amount">金额</string>
+    <string name="transfer_password">资金密码</string>
+    <string name="confirm_transfer">确认转账</string>
+    <string name="offlinetransfer_title">离线转账</string>
+    <string name="proxylink_title">代理链接</string>
+    <string name="memberdetail_title">会员详情</string>
+    <string name="title_activity_announcement">AnnouncementActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_bullet_detail">BulletDetailActivity</string>
+
+    <string name="title_activity_lottery_history">LotteryHistoryActivity</string>
+    <string name="title_activity_trend_history">TrendHistoryActivity</string>
+    <string name="issue_no">期号</string>
+    <string name="lottery_num">开奖号</string>
+    <string name="issue_profit">本期盈亏(元)</string>
+    <string name="pending_lottery">等待开奖...</string>
+    <string name="loading_list">正在获取清单</string>
+    <string name="no_limit">无限制</string>
+    <string name="error_service">发生错误</string>
+    <string name="error_update_rebate">更改返点失败:</string>
+    <string name="error_add_friend">添加失败:</string>
+    <string name="error_activate_transfer">开通失败:</string>
+    <string name="name_blank">账号名不能空白</string>
+    <string name="name_contains_special_char">账号名不能含特殊符号</string>
+    <string name="lottery_num_newest">最新开奖</string>
+
+
+    <!-- Strings related to find password -->
+    <string name="login_name_hint">您的帐号</string>
+    <string name="login_password_hint">您的密码</string>
+
+    <string name="find_password_title">找回密码</string>
+    <string name="userName_empty">请输入您的会员名</string>
+    <string name="find_password_textview">选择找回方式</string>
+    <string name="find_password_item1">邮箱</string>
+    <string name="find_password_info1">密码会发送至您的绑定邮箱</string>
+    <string name="find_password_item2">密保问题</string>
+    <string name="find_password_info2">验证密保问题正确后，设置新密码</string>
+    <string name="find_password_item3">资金密码</string>
+    <string name="find_password_info3">验证资金密码正确后密码会发送到您的绑定邮箱</string>
+    <string name="find_password_item4">手机</string>
+    <string name="find_password_info4">验证手机簡訊正确后，设置新密码</string>
+
+    <string name="valid_email_title">验证电邮</string>
+    <string name="valid_email_textview">您的密保邮箱</string>
+    <string name="valid_email_email_error">该邮箱与您绑定邮箱不一致</string>
+    <string name="valid_email_edittext_hint">请输入您的电邮</string>
+    <string name="valid_email_email_empty">填写邮箱栏位</string>
+    <string name="valid_email_btn">发送密码至邮箱</string>
+    <string name="valid_email_success">发送成功</string>
+    <string name="valid_email_success_long">密码已发送至您的邮箱</string>
+
+    <string name="valid_fund_password_title">验证资金密码</string>
+    <string name="valid_fund_password_textview1">您的资金密码</string>
+    <string name="valid_fund_password_empty_prompt">密码栏位不可为空</string>
+    <string name="valid_fund_password_error_prompt">确认是否正确输入</string>
+    <string name="valid_fund_password_edittext">请输入资金密码</string>
+    <string name="valid_fund_password_btn_next">下一步</string>
+
+    <string name="valid_sms_textview">手机</string>
+    <string name="valid_sms_edittext_hint">请输入您的手机</string>
+    <string name="valid_sms_sms_empty">填写手机栏位</string>
+    <string name="valid_sms_sms_error">该手机与您绑定手机不一致</string>
+    <string name="valid_sms_btn">发送密码至手机</string>
+    <string name="valid_sms_success_title">SMS密码找回</string>
+    <string name="valid_sms_success_message_title">找回密码成功</string>
+    <string name="valid_sms_success_message">请去查看手机并请妥善保管</string>
+
+    <string name="valid_sms_title">手机找回</string>
+
+    <string name="valid_issue_title">验证密保问题</string>
+    <string name="valid_issue_textview1">问题一</string>
+    <string name="valid_issue_answer_textview1">问题一答案</string>
+    <string name="valid_issue_answer_error1">该答案与设定答案不一致</string>
+    <string name="valid_issue_empty_prompt1">需要填入答案</string>
+    <string name="valid_issue_textview2">问题二</string>
+    <string name="valid_issue_answer_textview2">问题二答案</string>
+
+    <string name="set_new_password_title">设置新密码</string>
+    <string name="set_new_password_textview1">新密码</string>
+    <string name="set_new_password_edittext_hint">输入新密码</string>
+    <string name="set_new_password_textview2">新密码确认</string>
+    <string name="set_new_password_check_password_empty_prompt">确认密码栏位不可为空</string>
+    <string name="set_new_password_check_password_different_prompt">确认是否输入正确</string>
+    <string name="set_new_password_check_new_password_edittext_hint">确认新密码</string>
+    <string name="set_new_password_check_prompt_textview">建议使用字母加数字的组合以提高帐户安全性</string>
+    <string name="set_new_password_check_btnText">确认修改</string>
+
+    <string name="send_success_title">传送成功</string>
+    <string name="send_success_logo_title">密码已发送至您的邮箱</string>
+    <string name="send_success_email_textview">邮箱</string>
+    <string name="send_success_btnBackLoginTextView">返回登录画面</string>
+
+    <!-- Strings related to alipay activity -->
+    <string name="recharge_alipay_login_textview">充值帐号</string>
+    <string name="recharge_alipay_login_textview_cant_empty">* 充值帐号不可为空</string>
+    <string name="recharge_alipay_login_hint">请输入支付宝充值帐号</string>
+    <string name="recharge_alipay_title">支付宝充值</string>
+    <string name="recharge_alipay_btn">马上充值</string>
+    <string name="recharge_alipay_btn_100">100元</string>
+    <string name="recharge_alipay_btn_200">200元</string>
+    <string name="recharge_alipay_btn_500">500元</string>
+    <string name="recharge_alipay_btn_1000">1000元</string>
+    <string name="recharge_alipay_btn_2000">2000元</string>
+    <string name="recharge_alipay_btn_3000">3000元</string>
+    <string name="recharge_alipay_btn_4000">4000元</string>
+    <string name="recharge_alipay_btn_5000">5000元</string>
+    <string name="recharge_alipay_name_hint">请输入支付宝真实姓名</string>
+    <string name="recharge_alipay_name_title">支付宝真实姓名</string>
+    <string name="recharge_wechat_title">微信充值</string>
+    <string name="recharge_wechat_name_hint">請輸入微信支付的真實姓名</string>
+    <string name="recharge_wechat_name_title">微信支付真實姓名</string>
+    <string name="recharge_wechat_direct">微信充值</string>
+    <string name="recharge_wechat_tranfer">微信转卡</string>
+    <string name="recharge_way">充值方式</string>
+    <string name="recharge_select_way">选择充值方式</string>
+    <string name="recharge_done_title">充值信息</string>
+
+    <string name="recharge_alipay_direct">支付宝充值</string>
+    <string name="recharge_alipay_tranfer">支付宝转卡</string>
+    <string name="recharge_alipay_attention_title">充值提醒</string>
+    <string name="recharge_alipay_attention_jump_btn">跳转到支付宝</string>
+    <string name="recharge_alipay_attention_copy_btn">复制</string>
+    <string name="recharge_alipay_attention_text1">收款帐户名:</string>
+    <string name="recharge_alipay_attention_text2">收款帐户:</string>
+    <string name="recharge_alipay_attention_text3">附言:</string>
+    <string name="goto_recharge_page">打开充值页面</string>
+    <string name="error_pending_alipay">充值单未处理</string>
+    <string name="cancel_pending_alipay">取消未处理的"支付宝”充值单</string>
+    <string name="permission_cancel_pending_alipay">您还有“支付宝”充值单未处理, 要取消吗?</string>
+    <string name="confirm_cancel">确定取消</string>
+    <string name="not_cancel">不取消</string>
+    <string name="cancel_success">已取消</string>
+    <string name="not_activated">未开通转账</string>
+    <string name="save_changes">保存变更</string>
+    <string name="change_success">保存成功</string>
+    <string name="change_fail">保存失敗</string>
+    <string name="warning_empty_amount">金额不能为空</string>
+    <string name="warning_empty_account">帐户名不能为空</string>
+    <string name="loading_data">处理中</string>
+    <string name="confirm_pw_empty">密码确认不能为空</string>
+    <string name="tuto_1">将带二维码的页面屏幕截图, 或者长按图片保存到本地相册。</string>
+    <string name="tuto_2">打开支付宝/微信的扫码界面(以支付宝为例)</string>
+    <string name="tuto_3">跳转至支付页面【确认付款】便可</string>
+    <string name="remind_text">不知道怎么扫描自己手机上的二维码?</string>
+    <string name="open_tuto">查看教程</string>
+    <string name="on_off_button">【电源】</string>
+    <string name="home_buttom">【Home】</string>
+    <string name="power_or_home">【电源/Home】</string>
+    <string name="volume_minus">【音量-】</string>
+    <string name="return_to_previous">返回前页</string>
+    <string name="get_egg">领取</string>
+    <string name="initInfo_hint">账号资料涉及您的资金安全,请妥善填写保管</string>
+    <string name="title_activity_info_complete">InfoCompleteActivity</string>
+    <string name="result_area">开奖区</string>
+    <string name="open_lottery_fail">开奖失败</string>
+    <string name="title_activity_transfer">TransferActivity</string>
+    <string name="title_activity_transfer_detail">TransferDetailActivity</string>
+
+    <!-- Strings related to Recharge activity -->
+    <string name="recharge_line">请选择充值线路</string>
+    <string name="recharge_amount_empty">充值金额不能为空</string>
+    <string name="recharge_line_empty">充值线路不能为空</string>
+    <string name="recharge_qq_amount_limit">单笔限额 10 ~ 5000元</string>
+    <string name="recharge_wechat_amount_limit">单笔限额 10 ~ 5000元</string>
+    <string name="recharge_alipay_amount_limit">单笔限额 50 ~ 1000元</string>
+    <string name="recharge_amount_limit">单笔限额 %1$d ~ %2$d元</string>
+    <string name="recharge_name_empty">姓名不可以空白</string>
+    <string name="recharge_success_amount">转帐金额:</string>
+    <string name="recharge_success_remarks">附言:</string>
+    <string name="recharge_success_bank_user">收款帐户名:</string>
+    <string name="recharge_success_bank_card">收款帐户:</string>
+    <string name="recharge_success_bank_type">收款途径:</string>
+    <string name="recharge_success_countdown_time">%1$s:%2$s</string>
+    <string name="recharge_success_copy_btn">复制</string>
+    <string name="recharge_success_copy_bank_user">已复制帐户名</string>
+    <string name="recharge_success_copy_bank_card">已复制帐户</string>
+    <string name="recharge_success_copy_amount">已复制转帐金额</string>
+    <string name="recharge_success_copy_remarks">已复制附言</string>
+    <string name="recharge_success_countdown_time_title">订单支付倒计时：</string>
+    <string name="recharge_success_send_alert">发送提醒</string>
+    <string name="recharge_success_next">前往资金明细查看</string>
+    <string name="recharge_wechat_guide">微信转卡教学</string>
+    <string name="recharge_alipay_guide">支付宝转卡教学</string>
+    <string name="recharge_success_time_up">支付時間已過期</string>
+    <string name="recharge_online_bank_success_hint">务必将"附言"正确填写到银行汇款页面的汇款附言栏中，否则充值将无法到账。</string>
+
+    <!-- Strings related to Recharge Main activity -->
+    <string name="recharge_main_title">充值</string>
+    <string name="recharge_main_quick">银联支付</string>
+    <string name="recharge_main_quick_message">无需附言，单笔限额 1 ~ 20000元</string>
+    <string name="recharge_main_alipay">支付宝</string>
+    <string name="recharge_main_alipay_message">需附言，单笔限额50-5000元</string>
+    <string name="recharge_main_wechat">微信支付</string>
+    <string name="recharge_main_wechat_message">扫码支付更快捷，无手续费</string>
+    <string name="recharge_main_onlinebank">网银转账</string>
+    <string name="recharge_main_onlinebank_message">需附言</string>
+    <string name="recharge_main_qq">ＱＱ支付充值</string>
+    <string name="recharge_main_qq_message">无须附言，单笔限额10~5000元</string>
+    <string name="recharge_main_one_touch">一键支付</string>
+    <string name="recharge_main_one_touch_message">微信支付宝直接转帐，无需扫码</string>
+    <string name="recharge_main_jd_pay">京东钱包</string>
+    <string name="recharge_main_jd_pay_message">领先业界，最先支持，支付无障碍</string>
+
+    <!-- Strings related to error message -->
+    <string name="error_message_network">本地网络不稳定，请确认网路状态并重启应用程序(0)</string>
+    <string name="error_message_recharge_network">抱歉，网络异常，请查看记录是否已经充值</string>
+    <string name="error_message_unstable_network">网络状态不稳定，请耐心等候</string>
+    <string name="error_message_unstable_network_leave">网络异常，请重启重启应用!</string>
+    <string name="error_message_no_network">无法连接网络，请重新登录</string>
+    <string name="error_message_sd_card">找不到存储卡，无法下载</string>
+    <string name="error_message_entrance_retry">入口服务器不稳定，请稍等或重启应用</string>
+    <string name="error_message_captcha">获取验证码失败</string>
+    <string name="error_message_captcha_conut">%s，请输入验证码</string>
+    <string name="error_message_captcha_input">请输入验证码</string>
+    <string name="error_message_username_null">用户名不能为空</string>
+    <string name="error_message_password_null">密码不能为空</string>
+    <string name="error_message_permissions">授权失败，软件可能无法正常运行</string>
+    <string name="error_message_nickname_empty">昵称不能为空</string>
+    <string name="error_message_big_size">超过最大长度</string>
+    <string name="error_message_contents_empty">您有尚未填写的内容</string>
+    <string name="error_message_pwd_ans_empty">密保问题不能为空</string>
+    <string name="error_message_pwd_ans_different">请选择不同的密保问题</string>
+    <string name="error_message_pwd_input">密码输入有误</string>
+    <string name="error_message_pwd_invaild_symbol">输入密码存在非法字符</string>
+    <string name="error_message_email_input">请输入有效邮箱地址</string>
+    <string name="error_message_transder_amount">转账金额不能为0</string>
+    <string name="error_message_phone_input">请输入有效手机号码</string>
+    <string name="error_message_phone_empty">手机号码不能为空</string>
+    <string name="error_message_captcha_empty">验证码不能为空</string>
+    <string name="error_message_money_pw_stupid">新密码过于简单</string>
+    <string name="error_message_login_pw_stupid">新密码过于简单</string>
+
+    <!-- Strings related to success message -->
+    <string name="success_message_add">添加成功</string>
+    <string name="success_message_fix">修改成功</string>
+    <string name="success_message_transder">转账成功</string>
+
+    <!-- Strings related to loading message -->
+    <string name="loading_message">正在加载</string>
+    <string name="loading_message_line">正在尝试连接：线路 %d</string>
+    <string name="loading_message_download_app">目前正在下载</string>
+    <string name="loading_message_login">正在载入资料</string>
+    <string name="loading_message_login_line">正在尝试连接线路%d</string>
+    <string name="loading_message_one">正在计算最优线路</string>
+    <string name="loading_message_two">正在加载数据</string>
+    <string name="loading_message_recharge">正在提交申请!</string>
+    <string name="loading_message_getbasicdata">正在下载数据</string>
+    <string name="loading_message_submitting">正在提交!</string>
+    <string name="loading_message_ISSUEE">正在加载问题!</string>
+    <string name="loading_message_transder">正在转账</string>
+    <string name="loading_message_send_number_sms">请稍后...</string>
+    <string name="loading_message_update_phone_rotection">正在验证</string>
+
+    <!-- Lottery Title Name -->
+    <string name="title_slot">电子游戏</string>
+    <string name="title_realtime">时时彩</string>
+    <string name="title_pk10">PK拾</string>
+    <string name="title_hs">分分彩</string>
+    <string name="title_select_five">十一选五</string>
+    <string name="title_low_frequece">低频彩</string>
+    <string name="title_mmc">秒秒彩</string>
+    <string name="title_realman">真人娱乐</string>
+    <string name="title_kuaiSan">快三</string>
+
+    <!-- Lottery Name -->
+    <string name="lottery_name_realman">真人娱乐</string>
+    <string name="lottery_name_slot">聚星老虎机</string>
+    <string name="lottery_name_bjl">多人游戏</string>
+    <string name="lottery_name_bjls">多人3D百家乐</string>
+    <string name="lottery_name_chatroom_bjl">聊天室百家乐</string>
+    <string name="lottery_name_fishing">聚星捕鱼王</string>
+
+    <!-- Lottery Message -->
+    <string name="message_default">人气高，易分析，玩法齐全</string>
+    <string name="message_welfare_3d">玩法简单，易分析，中奖率高</string>
+    <string name="message_sports">由中体彩中心统一发行，经典彩种</string>
+    <string name="message_guangdong_select_five">十分钟一期,全天84期,中奖率高</string>
+    <string name="message_shandong_select_five">又名“十一运夺金”，玩法简单多样</string>
+    <string name="message_beijing_pk10">大小、龙虎、单双、和值、玩法多样</string>
+    <string name="message_hs_realtime">一分钟一期，开奖节奏快，返奖率高</string>
+    <string name="message_hs_select_five">开奖快，聚星独家，玩法简单多样</string>
+    <string name="message_xinjiang_realtime">开奖快，中奖率高、玩法简单多样</string>
+    <string name="message_hs_sf_reamtime">更快节奏，中奖率高，简单刺激</string>
+    <string name="message_hs_pk10">开奖快速，趣味性强，玩法简单多样</string>
+    <string name="message_hs_mmc_pk10">业内首款pk拾秒秒彩</string>
+    <string name="message_tianjin_realtime">中奖率高、简单刺激，玩法多样</string>
+    <string name="message_taiwan_wf_realtime">台湾5分彩，新彩种，新乐趣</string>
+    <string name="message_beijing_keno">北京快乐8，新彩种，新乐趣</string>
+    <string name="message_germany_pk10">真正的德国官方彩种</string>
+    <string name="message_realman">现场厅直播，美女荷官互动</string>
+    <string name="message_slot">华丽主题，中奖率高</string>
+    <string name="message_bjl_entrance">缤纷多人游戏，让你玩不停</string>
+    <string name="message_bjl">前所未有，震撼上线</string>
+    <string name="message_chatroom_bjl">边聊天，边玩百家乐</string>
+    <string name="message_qq_realtime">随时下注分分开奖</string>
+    <string name="message_italy_pk10">超高频PK10，分分开奖奖不停</string>
+    <string name="message_italy_realtime">意大利官方彩种，超高频让你无须等待</string>
+    <string name="message_fishing">你就是下一个捕鱼王</string>
+    <string name="message_jiang_su_kuai_san">中奖率高，易分析，简单好玩</string>
+
+    <!-- Dialog -->
+    <string name="dialog_update_version_title">有新的版本</string>
+    <string name="dialog_update_version_message">请更新后使用</string>
+    <string name="dialog_determine">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_leave_title">温馨提示</string>
+    <string name="dialog_leave_message">确认离开？</string>
+    <string name="dialog_message_push_tx_title">提现信息</string>
+    <string name="dialog_message_push_cz_title">充值信息</string>
+    <string name="dialog_message_push_transfer_notice_title">转账信息</string>
+    <string name="dialog_message_push_kj_title">开奖信息</string>
+    <string name="dialog_message_push_system_title">系统信息</string>
+    <string name="dialog_message_push_cz">成功充值：%s元</string>
+    <string name="dialog_message_push_leave">您已下线，请尝试重新登录</string>
+    <string name="dialog_transder_pt_playtype">类型: PT游戏</string>
+    <string name="dialog_transder_sports_playtype">类型: 体育竞技</string>
+    <string name="dialog_transder_play_amount">转账金额: %s元</string>
+    <string name="dialog_message_check_customer_service">确定要联系客服？</string>
+
+    <!-- Layout Element String -->
+    <string name="activity_login_findpassword">忘记密码了?&#160;&#160;&#160;可以点击这里找回</string>
+
+    <string name="activity_lotteryresult_play_type">%1$s-%2$s</string>
+    <string name="activity_lotteryresult_total_amount">%1$.4f</string>
+    <string name="activity_lotteryresult_after_content">第%1$s-%2$03d期</string>
+    <string name="activity_lotteryresult_after_numbers">追%d期</string>
+    <string name="activity_lotteryresult_title">投注订单</string>
+    <string name="activity_lotteryresult_success">恭喜，投注成功</string>
+    <string name="activity_lotteryresult_lottery_title">彩种</string>
+    <string name="activity_lotteryresult_play_title">玩法</string>
+    <string name="activity_lotteryresult_total_title">注单总额(单期)</string>
+    <string name="activity_lotteryresult_periods_title">追号起始</string>
+    <string name="activity_lotteryresult_record_link">投注记录-条目详情</string>
+    <string name="activity_lotteryresult_slot_link">在您等待开奖的时间里，来试试老虎机吧</string>
+    <string name="activity_lotteryresult_back_bet_view">返回投注界面</string>
+    <string name="activity_lotteryresult_text_1">*</string>
+    <string name="activity_lotteryresult_text_2">如有误操作，您可在</string>
+    <string name="activity_lotteryresult_text_3">中撤单</string>
+
+    <string name="activity_transfer_title">转账</string>
+    <string name="activity_transfer_loading">正在加载</string>
+    <string name="activity_transfer_platform_amount">平台可用金额(元)</string>
+    <string name="activity_transfer_frozen_amount">冻结金额(元)</string>
+    <string name="activity_transfer_choose">选择转账类型</string>
+    <string name="activity_transfer_realman_title">真人娱乐</string>
+    <string name="activity_transfer_pt_title">PT游戏</string>
+    <string name="activity_transfer_sports_title">体育竞猜</string>
+    <string name="activity_transfer_balance_title">余额:</string>
+    <string name="activity_transfer_frozen_title">冻结:</string>
+
+    <string name="activity_nickname_title">修改昵称</string>
+    <string name="activity_nickname_textview_title">修改你的昵称</string>
+    <string name="activity_nickname_textview_hint">您还没有设置昵称</string>
+    <string name="activity_nickname_caveat">昵称不能超过15个字符，更改成功后略有延迟</string>
+    <string name="activity_nickname_button">修改昵称</string>
+
+    <string name="activity_infocomplete_title">完善资料</string>
+    <string name="fragment_infocomplete_pwd_error_hint">请输入新密码</string>
+    <string name="fragment_infocomplete_pwdconfirm_error_hint">请确认密码</string>
+    <string name="fragment_infocomplete_ans_error_hint">请输入答案</string>
+    <string name="fragment_infocomplete_email_error_hint">请输入邮箱</string>
+    <string name="fragment_infocomplete_phone_error_hint">请输入手机号码</string>
+    <string name="fragment_infocomplete_pwd_repeat_hint">请重新确认密码</string>
+    <string name="fragment_infocomplete_moneypwd_title">设置资金密码</string>
+    <string name="fragment_infocomplete_pwd_tag">新密码</string>
+    <string name="fragment_infocomplete_pwd_hint">请输入新的资金密码</string>
+    <string name="fragment_infocomplete_pwdconfirm_tag">密码确认</string>
+    <string name="fragment_infocomplete_pwdconfirm_hint">请确认新的资金密码</string>
+    <string name="fragment_infocomplete_ans_title">设置密保问题</string>
+    <string name="fragment_infocomplete_problemone_tag">问题一</string>
+    <string name="fragment_infocomplete_ansone_tag">问题一答案</string>
+    <string name="fragment_infocomplete_problemtwo_tag">问题二</string>
+    <string name="fragment_infocomplete_anstwo_tag">问题二答案</string>
+    <string name="fragment_infocomplete_email_title">设置密保邮箱</string>
+    <string name="fragment_infocomplete_email_tag">您的邮箱</string>
+    <string name="fragment_infocomplete_email_hint">请输入您的邮箱</string>
+    <string name="fragment_infocomplete_carefully_choose">绑定后不能修改,请慎重选择</string>
+    <string name="fragment_infocomplete_phone_tag">手机号码</string>
+    <string name="fragment_infocomplete_phone_hint">请输入您的手机号码</string>
+    <string name="fragment_infocomplete_phone_remark">手机号为重要的保安设定，若您选择不设置，因此衍伸的相关问题我们将无法协助您进行处理</string>
+    <string name="fragment_infocomplete_next">下一步</string>
+
+    <string name="activity_setting_version_not_found">找不到版本号</string>
+    <string name="activity_setting_initial_information">初始资料设置</string>
+    <string name="activity_setting_set">尽早设置</string>
+
+    <string name="activity_transderdetail_title">转账</string>
+    <string name="activity_transderdetail_freeze">冻结金额(元)</string>
+    <string name="activity_transderdetail_realman_playtype">真人娱乐</string>
+    <string name="activity_transderdetail_realman_available">真人可用金额(元)</string>
+    <string name="activity_transderdetail_realman_out">转出 (从真人转出到平台账户)</string>
+    <string name="activity_transderdetail_realman_in">转入 (从平台账户转入到真人)</string>
+    <string name="activity_transderdetail_pt_playtype">PT游戏</string>
+    <string name="activity_transderdetail_pt_available">PT可用金额(元)</string>
+    <string name="activity_transderdetail_pt_out">转出(从PT转出到平台账户)</string>
+    <string name="activity_transderdetail_pt_in">转入(从平台账户转入到PT)</string>
+    <string name="activity_transderdetail_sports_playtype">体育竞技</string>
+    <string name="activity_transderdetail_sports_available">体育竞技可用金额(元)</string>
+    <string name="activity_transderdetail_sports_out">转出(从体育竞技转出到平台账户)</string>
+    <string name="activity_transderdetail_sports_in">转入(从平台账户转入到体育竞技)</string>
+
+    <string name="activity_form_showemail_email">密保邮箱</string>
+    <string name="activity_form_showemail_phone">手机号码</string>
+    <string name="activity_form_showemail_captcha">验证码</string>
+    <string name="activity_form_showemail_send_captcha">发送验证码</string>
+    <string name="activity_form_showemail_phone_remark">请填入手机号码并进行验证手续，手机号码一经设定无法修补，请慎重填写</string>
+
+    <string name="activity_customer_service_title">VIP 专属客服</string>
+    <string name="activity_customer_service_welcome">欢迎您访问JX专属VIP客服服务系统，我们将竭诚为您服务</string>
+    <string name="activity_customer_service_error">系统维护中，请稍后再试</string>
+    <string name="activity_customer_service_upload_error">图片上传太过频繁，请稍后再试</string>
+
+</resources>

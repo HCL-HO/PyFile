@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutPopExport"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#60000000"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="393dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="227.5dp"
+            android:background="#68BFBD"
+            android:gravity="center|bottom"
+            android:id="@+id/linearLayout4">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:src="@mipmap/popup_mobile" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/buttonPopClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="9.5dp"
+                android:layout_marginTop="9.5dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="30dp"
+                android:src="@mipmap/popup_close" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="专家玩法全新上线"
+            android:textColor="#08A09D"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="257.5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="随选即玩! 更多发烧专业级玩法重磅上线"
+            android:textColor="#9B9B9B"
+            android:textSize="13dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="288.5dp" />
+
+        <LinearLayout
+            android:id="@+id/buttonPopGo"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="330.5dp"
+            android:background="@mipmap/popup_go"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立 即 体 验"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

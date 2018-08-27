@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="87dp"
+        android:layout_height="80dp"
+        android:id="@+id/img_view"
+        />
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="18dp"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:background="@drawable/rect_regular_btn"
+        android:text="@string/get_egg"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_simple_slot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hec.app.activity.SimpleSlotActivity">
+
+    <cn.bingoogolapple.qrcode.zxing.ZXingView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/zxingview"
+        app:qrcv_animTime="1000"
+        app:qrcv_borderColor="@android:color/white"
+        app:qrcv_borderSize="1dp"
+        app:qrcv_cornerColor="@color/colorPrimaryDark"
+        app:qrcv_cornerLength="20dp"
+        app:qrcv_cornerSize="3dp"
+        app:qrcv_maskColor="#33FFFFFF"
+        app:qrcv_rectWidth="200dp"
+        app:qrcv_scanLineColor="@color/colorPrimaryDark"
+        app:qrcv_scanLineSize="1dp"
+        app:qrcv_topOffset="90dp" />
+    <TextView
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_start"
+        android:text="username=tomtom X-Hec-Authentication=B1ED4D13DEAD722342B6E98F89C8942F slotback-url=http://home.bigbrothers.info:6621/"/>
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="开始扫描"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="20dp"
+        />
+</RelativeLayout>

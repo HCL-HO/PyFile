@@ -1,0 +1,233 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hec.app.fragment.SlotRecordFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:background="@mipmap/img_record_header_bg">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="128dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/slot_header_lottery_image"
+                    android:layout_width="100dp"
+                    android:layout_height="73dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/slot_machine" />
+
+                <TextView
+                    android:id="@+id/slot_header_lottery_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="20160107期"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/record_header_order_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="注单号:20160107"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp">
+                <TextView
+                    android:id="@+id/record_header_label1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="盈亏"
+                    android:textSize="22sp"
+                    android:textColor="#3d5a79" />
+                    <TextView
+                        android:id="@+id/slot_header_win"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="+ 8080"
+                        android:textSize="22sp"
+                        android:textColor="#ffffff"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/record_header_label1"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/slot_header_lottery_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:text="已开奖"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:background="@mipmap/icon_drawn" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="游戏类别"/>
+                <TextView
+                    android:id="@+id/slot_game_type"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21dian"
+                    android:textSize="16sp"
+                    android:layout_marginTop="3dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_slot_record">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投注结果"/>
+                <TextView
+                    android:id="@+id/slot_result"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21dian"
+                    android:textSize="16sp"
+                    android:layout_marginTop="3dp"
+                    android:maxLines="10"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投注金额"/>
+                <TextView
+                    android:id="@+id/slot_amount"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21dian"
+                    android:textSize="16sp"
+                    android:layout_marginTop="3dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_slot_record">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投注时间"/>
+                <TextView
+                    android:id="@+id/slot_time"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21dian"
+                    android:textSize="16sp"
+                    android:layout_marginTop="3dp"
+                    android:maxLines="10"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*有效投注"/>
+                <TextView
+                    android:id="@+id/slot_amount_valid"
+                    android:textColor="@color/red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21dian"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="3dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

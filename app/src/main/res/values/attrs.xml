@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 应用程序级别或第三方组件的属性 -->
+    
+    <declare-styleable name="PullToRefresh">
+        <attr name="adapterViewBackground" format="reference|color" />
+        <attr name="headerBackgroundColor" format="reference|color" />
+        <attr name="headerTextColor" format="color" />
+        <attr name="mode1">
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+            <flag name="both" value="0x3" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="WebImageView">
+        <attr format="integer" name="progressResId" />
+        <attr format="integer" name="errorResId" />
+    </declare-styleable>
+    
+    <declare-styleable name="CustomView">
+        <attr name="itemColor" format="color"/>
+        <attr name="itemSize" format="dimension"/>
+        <attr name="itemSelectColor" format="color"/>
+        <attr name="itemSelectIcon" format="reference"/>
+        <attr name="itemSelectIconFill" format="boolean"/>
+    </declare-styleable>
+
+    <!--Sliding menu -->
+    <attr name="rightPadding" format="dimension" />
+    <declare-styleable name="NewSlidingMenu">
+        <attr name="rightPadding" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleButton">
+        <attr name="normalBackground" format="reference"/>
+        <attr name="selectedBackground" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="PowerImageView">
+        <attr name="auto_play" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="GifView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomTheme">
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
+</resources>

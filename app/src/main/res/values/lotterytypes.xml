@@ -1,0 +1,25 @@
+<resources>
+    <string name="chongqing_ssc">重庆时时彩</string>
+    <string name="jiangxi_ssc">江西时时彩</string>
+    <string name="welfare3D">福彩3D</string>
+    <string name="sports">体彩排列三</string>
+    <string name="tinGin">天津时时彩</string>
+    <string name="guangdong_selectFive">广东十一选五</string>
+    <string name="chongqing_selectFive">重庆十一选五</string>
+    <string name="shandong_selectFive">山东十一选五</string>
+    <string name="beijing_pk10">北京PK拾</string>
+    <string name="hesheng_ssc">聚星时时彩</string>
+    <string name="hesheng_mmc">聚星秒秒彩</string>
+    <string name="pk10_mmc">PK拾秒秒彩</string>
+    <string name="hesheng_selectFive">聚星十一选五</string>
+    <string name="xinjiang_ssc">新疆时时彩</string>
+    <string name="hesheng_sfc">聚星三分彩</string>
+    <string name="hesheng_pk10">聚星PK拾</string>
+    <string name="jiangsukusaisan">江苏快三</string>
+    <string name="realman">真人娱乐</string>
+    <string name="slot">聚星老虎机</string>
+    <string name="taiwanwufencai">台湾5分彩</string>
+    <string name="beijingkuaileba">北京快乐8</string>
+    <string name="hanguowufencai">韩国5分彩</string>
+    <string name="germany_pk10">德国PK拾</string>
+</resources>

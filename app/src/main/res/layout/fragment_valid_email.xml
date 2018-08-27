@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="44dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout3"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/valid_email_textview"
+            android:textSize="14dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="14dp"
+            android:textColor="#9e9e9e"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/error"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="14dp"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@mipmap/icon_exclaim"
+                android:layout_marginRight = "10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/valid_email_email_error"
+                android:textColor="#E9516A"
+                android:textSize="14dp"
+                android:id="@+id/error_msg"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/edit_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f2f2"
+        android:layout_below="@+id/relativeLayout3"
+        >
+        <EditText
+            android:id="@+id/valid_email_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="@string/valid_email_edittext_hint"
+            android:ems="10"
+            android:background="@null"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColorHint="@color/hint_word_gray"
+            android:inputType="textEmailAddress"
+            android:textCursorDrawable="@drawable/textcursor"
+            android:imeOptions="actionDone"
+            />
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@mipmap/icon_cross"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/btn_delete"
+            android:layout_marginRight="16dp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnValidEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/background_button_green_stroke_light_green"
+        android:onClick="true"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:id="@+id/btnText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/valid_email_btn"
+            android:textColor="@color/btn_light_green"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ImageView
+            android:src="@mipmap/btn_send_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/btnText"
+            android:layout_toEndOf="@+id/btnText"
+            android:layout_marginLeft="0dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

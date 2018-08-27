@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.hec.app.activity.OfenPlayLotteryActivity"
+    tools:showIn="@layout/activity_often_play_lottery">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/subscribe_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/Quick_Entrance_Rect_Style"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:src="@mipmap/icon_title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@+id/imgSelected"
+                    android:text="已选彩种"
+                    android:textAppearance="@style/Middel_Title_Style" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/seperate_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.hec.app.framework.widget.DragGridView
+                android:id="@+id/userGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:columnWidth="90dp"
+                android:horizontalSpacing="10px"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="1.0px" />
+
+            <View
+                android:id="@+id/seperate_line2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="invisible"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#ffffff">
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@mipmap/icon_upanddown"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginLeft="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="在上下区域之间进行点击可实现彩种的添加/删除"
+                    android:textColor="#6283a2"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/Quick_Entrance_Rect_Style"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:src="@mipmap/icon_title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="全部彩种列表"
+                    android:textAppearance="@style/Middel_Title_Style" />
+            </LinearLayout>
+
+            <com.hec.app.framework.widget.MyGridView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/otherGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:columnWidth="90dp"
+                android:horizontalSpacing="1.0px"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="1.0px" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/category_layout"
+        layout="@layout/subscribe_lottery_item"
+        android:visibility="gone" />
+</RelativeLayout>

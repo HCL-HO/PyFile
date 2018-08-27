@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:background="@mipmap/img_record_header_bg">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="128dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/record_header_lottery_image"
+                    android:layout_width="100dp"
+                    android:layout_height="73dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/icon_chongqing_ssc"/>
+
+                <TextView
+                    android:id="@+id/record_header_lottery_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="20160107期"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/record_header_order_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="注单号:20160107"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/record_header_label1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="盈亏"
+                    android:textSize="12sp"
+                    android:textColor="#3d5a79"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/record_header_lottery_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:text="已开奖"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:background="@mipmap/icon_drawn" />
+
+                <TextView
+                    android:id="@+id/record_header_value1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="+ 8080"
+                    android:textSize="16sp"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/record_header_label1"
+                    />
+
+                <TextView
+                    android:id="@+id/record_header_label2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="开奖号码"
+                    android:textSize="12sp"
+                    android:textColor="#3d5a79"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/record_header_value1"/>
+                <LinearLayout
+                    android:id="@+id/record_header_ll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/record_header_label2">
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scroll_view_bullet"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        android:fillViewport="true"
+        android:paddingBottom="15dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:id="@+id/record_content_label1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="投注号码"
+            android:textSize="12sp"
+            android:textColor="#9e9e9e"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:id="@+id/record_content_value1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2342,23423,4234234"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#08a09d"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/record_content_label2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="玩法"
+                    android:textColor="#9e9e9e"
+                    android:textSize="12sp"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/record_content_value2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="二星-后二组选"
+                    android:textSize="16sp"
+                    android:textColor="#202020"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:id="@+id/record_content_ll2">
+
+                <TextView
+                    android:id="@+id/record_content_label7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="奖金赔率"
+                    android:textColor="#9e9e9e"
+                    android:textSize="12sp"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/record_content_value7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5.1%"
+                    android:textSize="16sp"
+                    android:textColor="#202020"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/record_content_label3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="投注金额"
+            android:textSize="12sp"
+            android:textColor="#9e9e9e"
+            android:layout_marginTop="18dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/record_content_value31"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:text="20"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:text="X"
+                android:id="@+id/matip" />
+
+            <TextView
+                android:id="@+id/record_content_value32"
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:text="10000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:text="="
+                android:id="@+id/equal"/>
+
+            <TextView
+                android:id="@+id/record_content_value33"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:text="2000000.00"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/record_content_ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/maybe_missing1"
+                android:layout_width="80dp"
+                android:layout_height="16dp"
+                android:gravity="center"
+                android:background="#153557"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:text="单注金额"/>
+
+            <TextView
+                android:id="@+id/maybe_missing2"
+                android:layout_width="104dp"
+                android:layout_height="16dp"
+                android:background="#062444"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:text="注数"/>
+
+            <TextView
+                android:id="@+id/maybe_missing3"
+                android:layout_width="144dp"
+                android:layout_height="16dp"
+                android:gravity="center"
+                android:background="#08a09d"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:text="总金额"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/record_content_label4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="中奖注数"
+                    android:textSize="12sp"
+                    android:textColor="#9e9e9e"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/record_content_value4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="343"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#202020"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/record_content_label5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="返点金额（元）"
+                    android:textSize="12sp"
+                    android:textColor="#9e9e9e"
+                    android:layout_marginTop="15dp"/>
+                <TextView
+                    android:id="@+id/record_content_value5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="800"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#202020"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/record_content_label6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="交易时间"
+            android:textSize="12sp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/record_content_value6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2015-10-18 18:58:17"
+            android:textSize="16sp"
+            android:textColor="#202020"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="104dp"
+                android:layout_height="50dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/rect_record_btn1">
+                <TextView
+                    android:id="@+id/withdraw_or_stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:drawableLeft="@mipmap/icon_change"
+                    android:text="@string/record_detail_withdraw_bill" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/record_content_goback"
+                android:layout_width="208dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/rect_record_btn2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="#08a09d"
+                    android:drawableLeft="@mipmap/ic_action_return"
+                    android:text="@string/record_detail_return" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

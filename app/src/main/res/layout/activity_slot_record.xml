@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appBar"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/colorPrimary"
+                    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                    <ImageView
+                        android:id="@+id/imgBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_back_white"
+
+                        android:paddingLeft="-40dp" />
+                    <RelativeLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:visibility="invisible"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/img_title"
+                            android:src="@mipmap/button_lottery_selected"/>
+                        <ImageView
+                            android:visibility="visible"
+                            android:id="@+id/img_lottery"
+                            android:src="@color/transparent"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp" />
+                        <ImageView
+                            android:visibility="visible"
+                            android:layout_toRightOf="@+id/img_lottery"
+                            android:id="@+id/img_laohuji"
+                            android:src="@color/transparent"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            />
+                        <TextView
+                            android:id="@+id/activity_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/money_detail"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            />
+                    </RelativeLayout>
+                    <ImageView
+                        android:id="@+id/imgPersonalCenter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:src="@mipmap/icon_personal"
+                        android:paddingRight="8dp" />
+
+                </android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/appBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/id_fragment_container1"  >
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_below="@+id/appBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/id_fragment_container2"  >
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

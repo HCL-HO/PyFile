@@ -1,0 +1,14 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent" tools:context="com.hec.app.fragment.AllLotteryFragment">
+
+<ExpandableListView
+    android:id="@+id/listView_Lottery"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:childDivider="#8016918B"
+    android:dividerHeight="1dp"
+    android:drawSelectorOnTop="false"/>
+
+</FrameLayout>

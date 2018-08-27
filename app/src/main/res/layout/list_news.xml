@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:layout_marginTop="3dp">
+    <ImageView android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+         android:src="@mipmap/contact"
+        />
+
+    <TextView android:id="@+id/titleTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end" android:singleLine="true"
+        android:layout_toRightOf="@id/imageView"
+        android:textSize="16dp"
+        />
+    <TextView android:id="@+id/contentTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_below="@id/titleTextView"
+        android:textSize="14dp"
+        />
+</RelativeLayout>

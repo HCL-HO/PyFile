@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hec.app.fragment.LotteryHistoryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4d03162b"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:orientation="horizontal"
+            android:background="#011A38"
+            >
+            <TextView
+                android:layout_width="83dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/issue_no"
+                android:textColor="#5E7C98"
+                android:layout_marginLeft="8dp"
+                android:textSize="14dp"/>
+            <TextView
+                android:layout_width="155dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/lottery_num"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#5E7C98"
+                android:textSize="14dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="center_vertical|right"
+                android:text="@string/issue_profit"
+                android:textColor="#5E7C98"
+                android:textSize="14dp"/>
+        </LinearLayout>
+        <ListView
+            android:id="@id/android:list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"></ListView>
+
+    </LinearLayout>
+</FrameLayout>

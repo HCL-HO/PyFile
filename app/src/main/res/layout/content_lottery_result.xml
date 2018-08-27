@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/lottery_bg_smaller"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.hec.app.activity.LotteryResultActivity"
+    tools:showIn="@layout/activity_lottery_result">
+    <ScrollView
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="344dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal"
+                android:background="@mipmap/lottery_success_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="328dp"
+                    android:layout_height="44dp"
+                    android:background="@mipmap/lottery_result_top_bg"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:text="@string/activity_lotteryresult_success"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="104dp"
+                            android:layout_height="88dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@mipmap/img_lotterybackgroud"/>
+                        <ImageView
+                            android:layout_width="104dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="24dp"
+                            android:src="@mipmap/icon_chongqing_ssc"
+                            android:id="@+id/lottery_result_image" />
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:text="@string/activity_lotteryresult_lottery_title"
+                            android:textColor="#9e9e9e"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tvLotteryType"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text=""
+                            android:textColor="#202020"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="@string/activity_lotteryresult_play_title"
+                            android:textColor="#9e9e9e"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text=""
+                            android:id="@+id/tvPlayType"
+                            android:textColor="#202020"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="@string/activity_lotteryresult_total_title"
+                            android:textColor="#9e9e9e"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text=""
+                            android:id="@+id/tvTotalAmount"
+                            android:textColor="#08a09d"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tvAfterTitle"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="@string/activity_lotteryresult_periods_title"
+                            android:textColor="#9e9e9e"
+                            android:textSize="12sp" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="14dp"
+                                android:id="@+id/tvAfterContent_start"
+                                android:text=""
+                                android:textColor="#202020"
+                                android:textSize="16sp" />
+                            <TextView
+                                android:layout_width="5dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="14dp"
+                                android:textColor="#202020"
+                                android:textSize="16sp"
+                                android:visibility="invisible"/>
+                            <LinearLayout
+                                style="@style/Lottery_Follow"
+                                android:id="@+id/ll_follow"
+                                android:layout_width="44dp"
+                                android:layout_height="17dp"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="16dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tvAfterContent_follow"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="13sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_lotteryresult_text_1"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/activity_lotteryresult_text_2"
+                    android:textColor="#5e7c98"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/hyperLinkTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_lotteryresult_record_link"
+                    android:textColor="#08a09d" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_lotteryresult_text_3"
+                    android:textColor="#5e7c98" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/gotiger"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="16sp"
+                android:text="@string/activity_lotteryresult_slot_link"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="328dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:id="@+id/ll_return"
+                    android:background="@drawable/bg_btn_return"
+                    android:alpha="0.4"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/icon_return"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="center"
+                        android:text="@string/activity_lotteryresult_back_bet_view"
+                        android:textColor="#08a09d"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/ll_gotiger"
+                    android:background="@drawable/bg_btn_return"
+                    android:alpha="0.4"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/icon_return"
+                        android:visibility="invisible"
+                    />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="center"
+                        android:text="@string/activity_lotteryresult_back_bet_view"
+                        android:textColor="#08a09d"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
