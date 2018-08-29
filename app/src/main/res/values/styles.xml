@@ -76,6 +76,7 @@
     <style name="Widget.GifView" parent="@android:style/Widget"></style>
     <style name="WhiteCheck">
         <item name="colorAccent">#08A09D</item>
-        <item name="android:textColorSecondary">#08A09D</item>
+        <item name="android:textColorSecondary">@color/transparent</item>
     </style>
+
 </resources>

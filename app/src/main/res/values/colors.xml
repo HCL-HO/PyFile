@@ -60,8 +60,8 @@
     <color name="btn_word_gray">#9E9E9E</color>
     <color name="btn_solid_light_green">#E6F5F5</color>
 
-    <color name="login_button">#77C183</color>
-    <color name="login_button_after">#2FAC94</color>
+    <color name="login_button">#087C95</color>
+    <color name="login_button_after">#13A2BA</color>
 
     <color name="sweet_remind_bg">#e6f5f5</color>
     <color name="sweet_remind_word">#08bcb9</color>
@@ -84,4 +84,5 @@
     <color name="customer_service_title_color">#FF058A85</color>
     <color name="dialog_bg_black">#cc000000</color>
     <color name="customer_service_subtitle_color">#FF66A86A</color>
+    <color name="login_input_text">#878E97</color>
 </resources>
