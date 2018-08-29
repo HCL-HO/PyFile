@@ -22,9 +22,9 @@ android {
     buildToolsVersion '25.0.0'
 
     defaultConfig {
-//        ndk {
-//            abiFilters "armeabi-v7a"
-//        }
+        ndk {
+            abiFilters "armeabi-v7a", 'x86'
+        }
         applicationId "com.hec.hecApp"
         minSdkVersion 17
         targetSdkVersion 23

@@ -1,5 +1,6 @@
 # Built application files
 /*/build/
+build/intermediates/*
 .idea/*
 build/android-profile/*
 gradle/wrapper/*

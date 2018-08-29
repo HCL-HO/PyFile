@@ -19,6 +19,7 @@ import android.text.style.UnderlineSpan;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -78,7 +79,7 @@ public class LoginActivity extends AppCompatActivity {
     private ProgressDialog mProgressDialog;
     private AutoCompleteTextView txtUserName;
     private EditText txtPassword;
-    private TextView text_findpassword,text_chat;
+    private TextView text_findpassword, text_chat;
     private ImageView btn_password_delete, btn_dropdown_arrow;
     private RelativeLayout btn_Login;
     private Boolean mIsError;
@@ -94,7 +95,7 @@ public class LoginActivity extends AppCompatActivity {
     };
     private DownLoadService.MyBinder myBinder;
     private static final int REQUEST_CODE = 0x11;
-    long requestTime,responseTime;
+    long requestTime, responseTime;
     public int count = 0;
     private LinearLayout captcha_layout;
     private EditText captcha_text;
@@ -109,26 +110,28 @@ public class LoginActivity extends AppCompatActivity {
     private Spinner URL_spinner;
     private RelativeLayout login_back;
     private Bitmap bitmap;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        login_back = (RelativeLayout) findViewById(R.id.login_back);
 
         cutBitmap();
-        servertime = getSharedPreferences("servertime",MODE_PRIVATE);
-        BaseApp.SERVER_TIME_DIFF = servertime.getLong("servertimes",0);
-        userBestWin = getSharedPreferences("userbestwin",MODE_PRIVATE);
-        token = getSharedPreferences("token",MODE_PRIVATE);
+        servertime = getSharedPreferences("servertime", MODE_PRIVATE);
+        BaseApp.SERVER_TIME_DIFF = servertime.getLong("servertimes", 0);
+        userBestWin = getSharedPreferences("userbestwin", MODE_PRIVATE);
+        token = getSharedPreferences("token", MODE_PRIVATE);
         keyData = getSharedPreferences(CommonConfig.KEY_DATA, MODE_PRIVATE);
 
         SharedPreferences.Editor editor = keyData.edit();
         editor.putBoolean(CommonConfig.KEY_IS_LOGIN, true);
-        editor.commit();
+        editor.apply();
 
-        if(new LotteryService().getCachedBasicDataInfo(LotteryConfig.PLAY_MODE.CLASSIC) == null){
+        if (new LotteryService().getCachedBasicDataInfo(LotteryConfig.PLAY_MODE.CLASSIC) == null) {
             getBasicDataWhileNoCache();
-        }else{
-            if("".equals(token.getString("tokens",""))) {
+        } else {
+            if ("".equals(token.getString("tokens", ""))) {
                 servertime = getSharedPreferences(CommonConfig.KEY_SERVERTIME, MODE_PRIVATE);
                 BaseApp.SERVER_TIME_DIFF = servertime.getLong(CommonConfig.KEY_SERVERTIME_SERVER_TIMES, 0);
                 retry = getSharedPreferences(CommonConfig.KEY_RETRY, MODE_PRIVATE);
@@ -138,11 +141,9 @@ public class LoginActivity extends AppCompatActivity {
             }
             if (new LotteryService().getCachedBasicDataInfo(LotteryConfig.PLAY_MODE.CLASSIC) == null) {
                 getBasicDataWhileNoCache();
-            }
-            else if (new LotteryService().getCachedAllPlayConfigInfo() == null) {
+            } else if (new LotteryService().getCachedAllPlayConfigInfo() == null) {
                 getAllPlayConfigWhileNoCache();
-            }
-            else {
+            } else {
                 quickLogin();
             }
         }
@@ -150,34 +151,8 @@ public class LoginActivity extends AppCompatActivity {
         TestUtil.print("LoginActivity");
         System.gc();
         readUserName();
-        txtUserName = (AutoCompleteTextView)findViewById(R.id.txtUserName);
-        txtUserName.setThreshold(1);
+        setupTxtUsername();
 
-        final RmbAdapter adapter = new RmbAdapter(this, R.layout.simple_dropdown_item, userList);
-        adapter.setListener(new RmbAdapter.BtnClickListener() {
-            @Override
-            public void onBtnClick(int position) {
-                removeUserNameAndPassword(userList.get(position));
-                adapter.notifyDataSetChanged();
-                txtUserName.setText("");
-                txtUserName.dismissDropDown();
-            }
-        });
-        if(BuildConfig.DEBUG || BuildConfig.SIT || BuildConfig.UAT){
-            ImageView imageView = (ImageView) findViewById(R.id.backdoor_img);
-            imageView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                }
-            });
-        }
-        txtUserName.setAdapter(adapter);
-        txtUserName.setDropDownHeight(DisplayUtil.getPxByDp(this, 160));
-        txtUserName.setDropDownWidth(DisplayUtil.getPxByDp(this, 912 / 3));
-        txtUserName.setDropDownVerticalOffset(DisplayUtil.getPxByDp(this, 6));
-        txtUserName.setDropDownAnchor(R.id.relativeLayout);
-        txtUserName.setDropDownBackgroundResource(R.drawable.dropdown_menu_shape);
         txtPassword = (EditText) findViewById(R.id.txtPwd);
 
         rmb = (CheckBox) findViewById(R.id.rmb);
@@ -185,7 +160,7 @@ public class LoginActivity extends AppCompatActivity {
         captcha_layout = (LinearLayout) findViewById(R.id.captcha_layout);
         captcha_text = (EditText) findViewById(R.id.captcha_text);
         captcha_img = (ImageView) findViewById(R.id.captcha_img);
-        if(RETRY_COUNT >= 5){
+        if (RETRY_COUNT >= 5) {
             captcha_layout.setVisibility(View.VISIBLE);
             gotoGetCaptcha();
         }
@@ -196,18 +171,17 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        btn_Login = (RelativeLayout)findViewById(R.id.btnUserLogin);
-        btn_password_delete = (ImageView)findViewById(R.id.btn_password_delete);
-        btn_dropdown_arrow = (ImageView)findViewById(R.id.btn_history);
-        text_findpassword = (TextView)findViewById(R.id.text_findpassword);
-        text_chat = (TextView)findViewById(R.id.text_chat);
+        btn_password_delete = (ImageView) findViewById(R.id.btn_password_delete);
+        btn_dropdown_arrow = (ImageView) findViewById(R.id.btn_history);
+        text_findpassword = (TextView) findViewById(R.id.text_findpassword);
+        text_chat = (TextView) findViewById(R.id.text_chat);
         try {
             txtUserName.setText(userList.size() > 0 ? userList.get(0) : "");
             if (userList.size() > 0) {
                 rmb.setChecked(keyData.getBoolean(CommonConfig.KEY_DATA_RMB, false));
-                if(rmb.isChecked()){
+                if (rmb.isChecked()) {
                     txtPassword.setText(keyData.getString(userList.get(0), ""));
-                }else {
+                } else {
                     txtPassword.setText("");
                 }
             }
@@ -254,32 +228,20 @@ public class LoginActivity extends AppCompatActivity {
                 if (userList.contains(txtUserName)) {
                     SharedPreferences.Editor editor = keyData.edit();
                     editor.putString(txtUserName.getText().toString(), "");
-                    editor.commit();
+                    editor.apply();
                 }
                 txtPassword.setText("");
             }
         });
 
-
-        btn_Login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!isUserNameNotNull(txtUserName.getText().toString().trim())) {
-                    Toast.makeText(v.getContext(), R.string.error_message_username_null, Toast.LENGTH_SHORT).show();
-                }
-                if (!isUserPasswordNotNull(txtPassword.getText().toString().trim())) {
-                    Toast.makeText(v.getContext(), R.string.error_message_password_null, Toast.LENGTH_SHORT).show();
-                }
-                loginUser();
-            }
-        });
+        setupLoginBtn();
 
         //checkUpdate();
 
-        if(BuildConfig.DEBUG || BuildConfig.SIT || BuildConfig.UAT){
+        if (BuildConfig.DEBUG || BuildConfig.SIT || BuildConfig.UAT) {
             URL_spinner = (Spinner) findViewById(R.id.debug_url_choose);
             URL_spinner.setVisibility(View.VISIBLE);
-            ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(LoginActivity.this,android.R.layout.simple_spinner_dropdown_item, UrlConfig.URL_HOST_LIST);
+            ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(LoginActivity.this, android.R.layout.simple_spinner_dropdown_item, UrlConfig.URL_HOST_LIST);
             URL_spinner.setAdapter(adapter2);
             URL_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                 @Override
@@ -295,21 +257,92 @@ public class LoginActivity extends AppCompatActivity {
 
         }
 
-        if(BuildConfig.DEBUG || BuildConfig.SIT || BuildConfig.UAT){
+        if (BuildConfig.DEBUG || BuildConfig.SIT || BuildConfig.UAT) {
             new LogFloatingActionButton.Builder(this)
                     .setPopupWindowHec()
                     .putHecInfo(
-                            "app api:"+BaseService.RESTFUL_SERVICE_HOST,
-                            "聊天室api:"+BaseService.CHAT_URL,
-                            "slot cdn:"+BaseService.SLOT_CDN_URL,
-                            "slot back"+BaseService.SLOT_URL)
+                            "app api:" + BaseService.RESTFUL_SERVICE_HOST,
+                            "聊天室api:" + BaseService.CHAT_URL,
+                            "slot cdn:" + BaseService.SLOT_CDN_URL,
+                            "slot back" + BaseService.SLOT_URL)
                     .build();
         }
+
+        registerKeyboardListener();
+        //TODO registerUserAccountTxtListener
+        //TODO addRemoveUsername input action
+        //TODO checkbox ClickListener
+    }
+
+    private void setupLoginBtn() {
+        btn_Login = (RelativeLayout) findViewById(R.id.btnUserLogin);
+        btn_Login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (!isUserNameNotNull(txtUserName.getText().toString().trim())) {
+                    Toast.makeText(v.getContext(), R.string.error_message_username_null, Toast.LENGTH_SHORT).show();
+                }
+                if (!isUserPasswordNotNull(txtPassword.getText().toString().trim())) {
+                    Toast.makeText(v.getContext(), R.string.error_message_password_null, Toast.LENGTH_SHORT).show();
+                }
+                loginUser();
+            }
+        });
+    }
+
+    private void setupTxtUsername() {
+        txtUserName = (AutoCompleteTextView) findViewById(R.id.txtUserName);
+        txtUserName.setThreshold(1);
+
+        final RmbAdapter adapter = new RmbAdapter(this, R.layout.simple_dropdown_item, userList);
+        adapter.setListener(new RmbAdapter.BtnClickListener() {
+            @Override
+            public void onBtnClick(int position) {
+                removeUserNameAndPassword(userList.get(position));
+                adapter.notifyDataSetChanged();
+                txtUserName.setText("");
+                txtUserName.dismissDropDown();
+            }
+        });
+        if (BuildConfig.DEBUG || BuildConfig.SIT || BuildConfig.UAT) {
+            ImageView imageView = (ImageView) findViewById(R.id.backdoor_img);
+            imageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                }
+            });
+        }
+        txtUserName.setAdapter(adapter);
+        txtUserName.setDropDownHeight(DisplayUtil.getPxByDp(this, 160));
+        txtUserName.setDropDownWidth(DisplayUtil.getPxByDp(this, 912 / 3));
+        txtUserName.setDropDownVerticalOffset(DisplayUtil.getPxByDp(this, 6));
+        txtUserName.setDropDownAnchor(R.id.relativeLayout);
+        txtUserName.setDropDownBackgroundResource(R.drawable.dropdown_menu_shape);
+    }
+
+    private void registerKeyboardListener() {
+        final View placeHolder = findViewById(R.id.placeHolder);
+        login_back.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                int heightDiff = login_back.getRootView().getHeight() - login_back.getHeight();
+                try {
+                    if (heightDiff > DisplayUtil.getPxByDp(LoginActivity.this, 200)) { // if more than 200 dp, it's probably a keyboard...
+                        placeHolder.setVisibility(View.GONE);
+                    } else {
+                        placeHolder.setVisibility(View.VISIBLE);
+                    }
+                } catch (NullPointerException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 
 
     @Override
-    public void onPause(){
+    public void onPause() {
 //        saveUserName(spUserName);
         super.onPause();
     }
@@ -320,7 +353,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
         if (requestCode == REQUEST_CODE) {
-            if(grantResults.length > 0){
+            if (grantResults.length > 0) {
                 if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     // save file
                     MyFileCache.install(getApplicationContext());
@@ -335,8 +368,8 @@ public class LoginActivity extends AppCompatActivity {
 
     public void saveUserName(String username) {
         userList.add(0, username);
-        for(int i = 1; i < userList.size(); i++){
-            if(userList.get(i).compareTo(username) == 0){
+        for (int i = 1; i < userList.size(); i++) {
+            if (userList.get(i).compareTo(username) == 0) {
                 userList.remove(i);
                 break;
             }
@@ -353,7 +386,7 @@ public class LoginActivity extends AppCompatActivity {
         editor.commit();
     }
 
-    public void saveRmbStatus(boolean rmb){
+    public void saveRmbStatus(boolean rmb) {
         SharedPreferences.Editor editor = keyData.edit();
         editor.putBoolean(CommonConfig.KEY_DATA_RMB, rmb);
         editor.commit();
@@ -361,8 +394,8 @@ public class LoginActivity extends AppCompatActivity {
 
     public void removeUserNameAndPassword(String username) {
 
-        for(int i = 0; i < userList.size(); i++){
-            if(userList.get(i).compareTo(username) == 0){
+        for (int i = 0; i < userList.size(); i++) {
+            if (userList.get(i).compareTo(username) == 0) {
                 userList.remove(i);
                 break;
             }
@@ -374,7 +407,7 @@ public class LoginActivity extends AppCompatActivity {
         editor.commit();
     }
 
-    public void readUserName(){
+    public void readUserName() {
         userList = new Gson().fromJson(keyData.getString(CommonConfig.KEY_DATA_USER_NAMES, "[]"), ArrayList.class);
         TestUtil.print(userList.toString());
     }
@@ -437,16 +470,16 @@ public class LoginActivity extends AppCompatActivity {
         // 点击登录时关闭输入法。
         InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
         inputMethodManager.hideSoftInputFromWindow(txtPassword.getWindowToken(), 0);
-        Log.i("speed","loginuser");
-        if(RETRY_COUNT<5){
-            Log.i("speed","normal");
+        Log.i("speed", "loginuser");
+        if (RETRY_COUNT < 5) {
+            Log.i("speed", "normal");
             login(useName, password);
-        }else{
+        } else {
             String captcha = captcha_text.getText().toString();
-            if(captcha.equals("")){
+            if (captcha.equals("")) {
                 MyToast.show(LoginActivity.this, getString(R.string.error_message_captcha_input));
-            }else{
-                loginWithCaptcha(useName,password,BaseApp.CAPTCHA_KEY,captcha);
+            } else {
+                loginWithCaptcha(useName, password, BaseApp.CAPTCHA_KEY, captcha);
             }
         }
     }
@@ -454,8 +487,8 @@ public class LoginActivity extends AppCompatActivity {
     private void login(final String userName, final String password) {
         mIsError = false;
         LOADING_COUNT++;
-        if("HKAA4TestBoom".equals(userName)){
-            MyToast.show(LoginActivity.this,"进入开发模式! ");
+        if ("HKAA4TestBoom".equals(userName)) {
+            MyToast.show(LoginActivity.this, "进入开发模式! ");
             txtUserName.setText("");
             BaseService.RESTFUL_SERVICE_HOST = "http://bigbrothers.info:19088/";
             BaseApp.CHEN_MODE = true;
@@ -470,8 +503,8 @@ public class LoginActivity extends AppCompatActivity {
             public Response<LogonInfoNew> callService() throws IOException,
                     JsonParseException, BizException, ServiceException {
                 requestTime = System.currentTimeMillis();
-                Log.i("speed","in login");
-                return new AccountService().logOnWithCaptcha(userName, password,"","");
+                Log.i("speed", "in login");
+                return new AccountService().logOnWithCaptcha(userName, password, "", "");
             }
 
             @Override
@@ -482,10 +515,10 @@ public class LoginActivity extends AppCompatActivity {
                 closeLoading();
                 if (!mIsError) {
                     responseTime = System.currentTimeMillis();
-                    Log.i("speed","login url " + BaseService.RESTFUL_SERVICE_HOST);
+                    Log.i("speed", "login url " + BaseService.RESTFUL_SERVICE_HOST);
                     if (result.getSuccess()) {
                         RETRY_COUNT = 0;
-                        Log.i("store","in get success");
+                        Log.i("store", "in get success");
                         CustomerInfo customerInfo = new CustomerInfo();
                         customerInfo.setAuthenticationKey(result.getData().getKey());
                         customerInfo.setUserID(String.valueOf(result.getData().getUserID()));
@@ -504,21 +537,21 @@ public class LoginActivity extends AppCompatActivity {
                         editor.commit();
                         SharedPreferences.Editor editor3 = servertime.edit();
                         BaseApp.SERVER_TIME_DIFF = System.currentTimeMillis() -
-                                Long.parseLong(result.getData().getCurrentTime().substring(6,19));
-                        Log.i("wxj","3 times: "+System.currentTimeMillis()+ " ss "
-                                + Long.parseLong(result.getData().getCurrentTime().substring(6,19)));
-                        Log.i("wxj","timesss: " + BaseApp.SERVER_TIME_DIFF);
+                                Long.parseLong(result.getData().getCurrentTime().substring(6, 19));
+                        Log.i("wxj", "3 times: " + System.currentTimeMillis() + " ss "
+                                + Long.parseLong(result.getData().getCurrentTime().substring(6, 19)));
+                        Log.i("wxj", "timesss: " + BaseApp.SERVER_TIME_DIFF);
                         editor3.putLong(CommonConfig.KEY_SERVERTIME_SERVER_TIMES, BaseApp.SERVER_TIME_DIFF);
                         editor3.commit();
-                        Log.i("store","normal login");
+                        Log.i("store", "normal login");
                         Class<?> loginBeforeCls = BaseApp.instance().getLoginBeforeCls();
                         SharedPreferences.Editor editor4 = userBestWin.edit();
-                        if(result.getData().getUserBestPrize() != null){
+                        if (result.getData().getUserBestPrize() != null) {
                             editor4.putString(CommonConfig.KEY_USERBESTWIN_LOTTERY_TYPE, result.getData().getUserBestPrize().getLotteryType());
                             editor4.putString(CommonConfig.KEY_USERBESTWIN_AMOUNT, result.getData().getUserBestPrize().getWinMoney());
-                        }else{
+                        } else {
                             editor4.putString(CommonConfig.KEY_USERBESTWIN_LOTTERY_TYPE, "无");
-                            editor4.putString(CommonConfig.KEY_USERBESTWIN_AMOUNT,"0");
+                            editor4.putString(CommonConfig.KEY_USERBESTWIN_AMOUNT, "0");
                         }
                         editor4.commit();
 //                        Bundle bundle = new Bundle();
@@ -528,8 +561,7 @@ public class LoginActivity extends AppCompatActivity {
                             BaseApp.instance().setLoginBeforeCls(null);
                             IntentUtil.redirectToNextActivity(LoginActivity.this, loginBeforeCls);
                             LoginActivity.this.finish();
-                        }
-                        else {
+                        } else {
                             IntentUtil.redirectToNextActivity(LoginActivity.this, HomeActivity.class);
                             LoginActivity.this.finish();
                             saveUserName(userName);
@@ -537,23 +569,22 @@ public class LoginActivity extends AppCompatActivity {
                             saveRmbStatus(rmb.isChecked());
                         }
                     } else {
-                        Log.i("speed","login failed " + RETRY_COUNT);
-                        if(!"".equals(getRetryNum(result.getMessage()))){
+                        Log.i("speed", "login failed " + RETRY_COUNT);
+                        if (!"".equals(getRetryNum(result.getMessage()))) {
                             RETRY_COUNT = Integer.parseInt(getRetryNum(result.getMessage()));
                         }
-                        if(RETRY_COUNT >= 5){
+                        if (RETRY_COUNT >= 5) {
                             captcha_layout.setVisibility(View.VISIBLE);
                             MyToast.show(LoginActivity.this, String.format(getString(R.string.error_message_captcha_conut), CustomMsg(result.getMessage())));
                             gotoGetCaptcha();
-                        }else {
+                        } else {
                             MyToast.show(LoginActivity.this, CustomMsg(result.getMessage()));
                         }
                     }
                     SharedPreferences.Editor editor = retry.edit();
                     editor.putInt(CommonConfig.KEY_RETRY_COUNT, RETRY_COUNT);
                     editor.commit();
-                }
-                else {
+                } else {
                     BaseApp.changeUrl(LoginActivity.this, new BaseApp.OnChangeUrlListener() {
                         @Override
                         public void changeSuccess() {
@@ -561,7 +592,8 @@ public class LoginActivity extends AppCompatActivity {
                         }
 
                         @Override
-                        public void changeFail() {}
+                        public void changeFail() {
+                        }
                     });
                 }
             }
@@ -575,7 +607,7 @@ public class LoginActivity extends AppCompatActivity {
         task.executeTask();
     }
 
-    private void loginWithCaptcha(final String username, final String pwd, final String verifyID, final String captcha){
+    private void loginWithCaptcha(final String username, final String pwd, final String verifyID, final String captcha) {
         mIsError = false;
         LOADING_COUNT++;
 
@@ -584,15 +616,15 @@ public class LoginActivity extends AppCompatActivity {
         MyAsyncTask<Response<LogonInfoNew>> task = new MyAsyncTask<Response<LogonInfoNew>>(LoginActivity.this) {
             @Override
             public Response<LogonInfoNew> callService() throws IOException, JsonParseException, BizException, ServiceException {
-                return new AccountService().logOnWithCaptcha(username,pwd,verifyID,captcha);
+                return new AccountService().logOnWithCaptcha(username, pwd, verifyID, captcha);
             }
 
             @Override
             public void onLoaded(Response<LogonInfoNew> result) throws Exception {
                 closeLoading();
                 btn_Login.setClickable(true);
-                if(!mIsError){
-                    if(result.getSuccess()){
+                if (!mIsError) {
+                    if (result.getSuccess()) {
                         RETRY_COUNT = 0;
                         SharedPreferences.Editor editor = retry.edit();
                         editor.putInt(CommonConfig.KEY_RETRY_COUNT, RETRY_COUNT);
@@ -614,7 +646,7 @@ public class LoginActivity extends AppCompatActivity {
                         editor2.putString(CommonConfig.KEY_TOKEN_BANK_SHOW, result.getData().getBankShow());
                         editor2.commit();
                         BaseApp.SERVER_TIME_DIFF = System.currentTimeMillis() -
-                                Long.parseLong(result.getData().getCurrentTime().substring(6,19));
+                                Long.parseLong(result.getData().getCurrentTime().substring(6, 19));
                         SharedPreferences.Editor editor3 = servertime.edit();
                         editor3.putLong(CommonConfig.KEY_SERVERTIME_SERVER_TIMES, BaseApp.SERVER_TIME_DIFF);
                         editor3.commit();
@@ -630,8 +662,7 @@ public class LoginActivity extends AppCompatActivity {
                             BaseApp.instance().setLoginBeforeCls(null);
                             IntentUtil.redirectToNextActivity(LoginActivity.this, loginBeforeCls);
                             LoginActivity.this.finish();
-                        }
-                        else{
+                        } else {
                             IntentUtil.redirectToNextActivity(LoginActivity.this, HomeActivity.class);
 //                            Intent intent = new Intent();
 //                            intent.putExtras(bundle);
@@ -642,23 +673,23 @@ public class LoginActivity extends AppCompatActivity {
                             savePassword(username, pwd);
                             saveRmbStatus(rmb.isChecked());
                         }
-                    }else{
-                        if(!"".equals(getRetryNum(result.getMessage()))){
+                    } else {
+                        if (!"".equals(getRetryNum(result.getMessage()))) {
                             RETRY_COUNT = Integer.parseInt(getRetryNum(result.getMessage()));
                         }
-                        MyToast.show(LoginActivity.this,CustomMsg(result.getMessage()));
+                        MyToast.show(LoginActivity.this, CustomMsg(result.getMessage()));
                         gotoGetCaptcha();
                     }
-                }
-                else {
+                } else {
                     BaseApp.changeUrl(LoginActivity.this, new BaseApp.OnChangeUrlListener() {
                         @Override
                         public void changeSuccess() {
-                            loginWithCaptcha(username,pwd,verifyID,captcha);
+                            loginWithCaptcha(username, pwd, verifyID, captcha);
                         }
 
                         @Override
-                        public void changeFail() {}
+                        public void changeFail() {
+                        }
                     });
                 }
             }
@@ -688,9 +719,9 @@ public class LoginActivity extends AppCompatActivity {
 
     private void killProcessAndExit() {
         moveTaskToBack(true);
-        if(BaseApp.activityList.size()!=0){
-            for(Activity activity : BaseApp.activityList){
-                if(activity!=null){
+        if (BaseApp.activityList.size() != 0) {
+            for (Activity activity : BaseApp.activityList) {
+                if (activity != null) {
                     activity.finish();
                 }
             }
@@ -720,7 +751,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private boolean needConfirmWhenExit() {
-        SharedPreferences settings =getBaseContext().getSharedPreferences(CommonConfig.KEY_SETTING_PREFERENCE, MODE_PRIVATE);
+        SharedPreferences settings = getBaseContext().getSharedPreferences(CommonConfig.KEY_SETTING_PREFERENCE, MODE_PRIVATE);
         return settings.getBoolean(CommonConfig.KEY_CONFIRM_WHEN_EXIT, true);
     }
 
@@ -733,7 +764,7 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-//    public void checkUpdate(){
+    //    public void checkUpdate(){
 //        if(BaseApp.getAppBean() != null){
 //            try {
 //                final int v = Integer.parseInt(BaseApp.getAppBean().getVersion());
@@ -826,7 +857,7 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    private void gotoGetCaptcha(){
+    private void gotoGetCaptcha() {
         mIsError = false;
         captcha_img.setClickable(false);
         captcha_img.setVisibility(View.VISIBLE);
@@ -838,12 +869,12 @@ public class LoginActivity extends AppCompatActivity {
 
             @Override
             public void onLoaded(Bitmap result) throws Exception {
-                if(!mIsError){
+                if (!mIsError) {
                     captcha_img.setVisibility(View.VISIBLE);
                     captcha_img.setImageBitmap(result);
                     captcha_img.setClickable(true);
-                    Log.i("speed","get the captcha!!");
-                }else{
+                    Log.i("speed", "get the captcha!!");
+                } else {
                     captcha_img.setImageResource(R.mipmap.getcaptcha_button);
                     MyToast.show(LoginActivity.this, getString(R.string.error_message_captcha));
                 }
@@ -858,22 +889,22 @@ public class LoginActivity extends AppCompatActivity {
         task.executeTask();
     }
 
-    private String getRetryNum(String s){
-            Pattern pattern = Pattern.compile("\\d+");
-            if(!s.equals("")){
-                Matcher matcher = pattern.matcher(s);
-                while(matcher.find()){
-                    return matcher.group(0);
-                }
+    private String getRetryNum(String s) {
+        Pattern pattern = Pattern.compile("\\d+");
+        if (!s.equals("")) {
+            Matcher matcher = pattern.matcher(s);
+            while (matcher.find()) {
+                return matcher.group(0);
             }
+        }
         return "";
     }
 
-    private void getBasicDataWhileNoCache(){
+    private void getBasicDataWhileNoCache() {
         showLoading(getString(R.string.loading_message_login), false);
 
         mIsError = false;
-        Log.i("store","getbasicnocache");
+        Log.i("store", "getbasicnocache");
         MyAsyncTask<List<BasicDataInfo>> task = new MyAsyncTask<List<BasicDataInfo>>(LoginActivity.this) {
             @Override
             public List<BasicDataInfo> callService() throws IOException, JsonParseException, BizException, ServiceException {
@@ -891,10 +922,10 @@ public class LoginActivity extends AppCompatActivity {
                         }
 
                         @Override
-                        public void changeFail() {}
+                        public void changeFail() {
+                        }
                     });
-                }
-                else {
+                } else {
                     BasicDataInfo basicDataInfo = new LotteryService().getCachedBasicDataInfo(LotteryConfig.PLAY_MODE.CLASSIC);
                     if (basicDataInfo != null) {
                         SharedPreferences.Editor editor = getSharedPreferences(CommonConfig.KEY_HASHCODE, MODE_PRIVATE).edit();
@@ -904,8 +935,7 @@ public class LoginActivity extends AppCompatActivity {
 
                     if (new LotteryService().getCachedAllPlayConfigInfo() == null) {
                         getAllPlayConfigWhileNoCache();
-                    }
-                    else  {
+                    } else {
                         quickLogin();
                     }
                 }
@@ -941,10 +971,10 @@ public class LoginActivity extends AppCompatActivity {
                         }
 
                         @Override
-                        public void changeFail() {}
+                        public void changeFail() {
+                        }
                     });
-                }
-                else {
+                } else {
                     AllPlayConfig allPlayConfig = new LotteryService().getCachedAllPlayConfigInfo();
                     if (allPlayConfig != null) {
                         SharedPreferences.Editor editor = getSharedPreferences(CommonConfig.KEY_HASHCODE, MODE_PRIVATE).edit();
@@ -965,16 +995,16 @@ public class LoginActivity extends AppCompatActivity {
         task.executeTask();
     }
 
-    public String CustomMsg(String str){
-        if(str != null){
-            str = str.replace("，",",");
+    public String CustomMsg(String str) {
+        if (str != null) {
+            str = str.replace("，", ",");
             String array[] = str.split(",");
-            if(array.length == 4){
+            if (array.length == 4) {
                 String output = "";
-                for(int i=0;i < 3;i++){
+                for (int i = 0; i < 3; i++) {
                     output = output + array[i] + ",";
                 }
-                return output.substring(0,output.length()-1);
+                return output.substring(0, output.length() - 1);
             }
             return str;
         }
@@ -999,11 +1029,10 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    private void cutBitmap(){
-        login_back = (RelativeLayout) findViewById(R.id.login_back);
+    private void cutBitmap() {
 
         try {
-            int screenWidth  = getWindowManager().getDefaultDisplay().getWidth();
+            int screenWidth = getWindowManager().getDefaultDisplay().getWidth();
             int screenHeight = getWindowManager().getDefaultDisplay().getHeight();
             bitmap = BitmapUtil.decodeSampledBitmapFromResource(
                     getResources(),
@@ -1011,13 +1040,13 @@ public class LoginActivity extends AppCompatActivity {
                     screenWidth,
                     screenHeight
             );
-            login_back.setBackground(new BitmapDrawable(getResources(),bitmap));
-        }catch (OutOfMemoryError oom){
+            login_back.setBackground(new BitmapDrawable(getResources(), bitmap));
+        } catch (OutOfMemoryError oom) {
             try {
                 Bitmap b = BitmapUtil.readBitMap(this, R.mipmap.bg, Bitmap.Config.ALPHA_8);
-                login_back.setBackground(new BitmapDrawable(getResources(),b));
-            }catch (OutOfMemoryError oom2){
-                MyToast.show(this,"请您清理内存!");
+                login_back.setBackground(new BitmapDrawable(getResources(), b));
+            } catch (OutOfMemoryError oom2) {
+                MyToast.show(this, "请您清理内存!");
             }
         }
     }
@@ -1031,7 +1060,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if(bitmap != null && !bitmap.isRecycled()){
+        if (bitmap != null && !bitmap.isRecycled()) {
             bitmap.recycle();
             bitmap = null;
         }

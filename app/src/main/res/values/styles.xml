@@ -75,8 +75,8 @@
 
     <style name="Widget.GifView" parent="@android:style/Widget"></style>
     <style name="WhiteCheck">
-        <item name="colorAccent">#08A09D</item>
-        <item name="android:textColorSecondary">@color/transparent</item>
+        <item name="colorAccent">@color/login_input_text</item>
+        <item name="android:textColorSecondary">@color/login_input_text</item>
     </style>
 
 </resources>

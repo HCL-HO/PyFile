@@ -9,5 +9,6 @@
     <dimen name="size90">8dp</dimen>
     <dimen name="shadow_width">100dp</dimen>
     <dimen name="slidingmenu_offset">80dp</dimen>
+    <dimen name="login_icon_size">24dp</dimen>
 
 </resources>

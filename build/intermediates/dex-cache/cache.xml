@@ -30,21 +30,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.tencent.tinker/bsdiff-util/1.7.6/476cd1bc7ea0732ce3f4576ad3c521735f800662/bsdiff-util-1.7.6.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="476cd1bc7ea0732ce3f4576ad3c521735f800662">
-        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/bsdiff-util-1.7.6_d2f2674acaa4158f023df6f616eb5ca6ede62f49/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Pinterest-2.8.2.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="8c7ab1a50bea23713c30da69558948a3804a34c3">
         <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Pinterest-2.8.2_48732a7f6fd3d30a36a204a26514092f60ba18d3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.tencent.tinker/bsdiff-util/1.7.6/476cd1bc7ea0732ce3f4576ad3c521735f800662/bsdiff-util-1.7.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="476cd1bc7ea0732ce3f4576ad3c521735f800662">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/bsdiff-util-1.7.6_d2f2674acaa4158f023df6f616eb5ca6ede62f49/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -111,15 +111,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.2.1/2287494d4f5f9f3a9a2bb6980e3f32053721b315/core-3.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="2287494d4f5f9f3a9a2bb6980e3f32053721b315">
-        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/core-3.2.1_2daa7192edf89f90d9997d10d3d971fad94d4684/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/ericho/workspace/JX_App_Android/app/libs/slf4j-simple-1.7.25.jar"
         jumboMode="false"
         optimize="true"
@@ -138,12 +129,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ericho/.android/build-cache/0b03da32cabb3038766d1d769d4d2f72a8ef9d4c/output/jars/classes.jar"
+        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.2.1/2287494d4f5f9f3a9a2bb6980e3f32053721b315/core-3.2.1.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c6e8f9ca197f53dbe745563f37324053b5646346/classes.dex" />
+        sha1="2287494d4f5f9f3a9a2bb6980e3f32053721b315">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/core-3.2.1_2daa7192edf89f90d9997d10d3d971fad94d4684/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -162,6 +153,15 @@
         revision="25.0.0"
         sha1="330092113553cc9b3030c0bdb99c4723a24805b9">
         <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Meipai-2.8.2_4f5c5406cb19247121c7e0e37269344f6f2c9736/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/0b03da32cabb3038766d1d769d4d2f72a8ef9d4c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c6e8f9ca197f53dbe745563f37324053b5646346/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -201,21 +201,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ericho/.android/build-cache/3b8aaacf8278fcf3f9b8debdeedb1d8d6b6e25cb/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="7a9f96bfbb71dc928a5d01440d879ef17f3f2349">
-        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_701596100f97f1c39d8404b5721ae4ce1a41fb57/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Facebook-2.8.2.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="6fb4a741c1bce3db23e592b939933cf9872bc20b">
         <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Facebook-2.8.2_3c4b65c318be5205864ec77668dd68b8fb0c9fc4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/3b8aaacf8278fcf3f9b8debdeedb1d8d6b6e25cb/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7a9f96bfbb71dc928a5d01440d879ef17f3f2349">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_701596100f97f1c39d8404b5721ae4ce1a41fb57/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -390,6 +390,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/0807a573a28000c16ed949d480c3c68a3af34915/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_63d0cb38bad6e278343f84e6b772a749fa11378e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/ericho/.android/build-cache/f77cdd36900d190f3d71a9cd0ada00ead570cbad/output/jars/libs/internal_impl-23.4.0.jar"
         jumboMode="false"
         optimize="true"
@@ -516,21 +525,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.neovisionaries/nv-websocket-client/1.31/e101d5221d6315ba4165193e912c0cebe5ef50d5/nv-websocket-client-1.31.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e101d5221d6315ba4165193e912c0cebe5ef50d5">
-        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/nv-websocket-client-1.31_9bf24eddc4fa9aa6d4bdd052d4dd7a3594ce64e1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Alipay-2.8.2.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="436a2c5270cc10b2c47eaa36f0eb18e79550532e">
         <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Alipay-2.8.2_0822092e7e54beea5d7f7b744a2efab3688e30c7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.neovisionaries/nv-websocket-client/1.31/e101d5221d6315ba4165193e912c0cebe5ef50d5/nv-websocket-client-1.31.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e101d5221d6315ba4165193e912c0cebe5ef50d5">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/nv-websocket-client-1.31_9bf24eddc4fa9aa6d4bdd052d4dd7a3594ce64e1/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -543,21 +552,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.5.0/bb7d4d96e780e8ef4f275c7d8dd3ef2883ddf99a/okio-1.5.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="bb7d4d96e780e8ef4f275c7d8dd3ef2883ddf99a">
-        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.5.0_9f5e5d9e0419ec32b10ed3519b6bd6eae449d9d9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Flickr-2.8.2.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="1b041a116999434248ef1eacfb77e0b9f72b096e">
         <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Flickr-2.8.2_2d236acf01d8fe9eec2d88058f9ac90898658044/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.5.0/bb7d4d96e780e8ef4f275c7d8dd3ef2883ddf99a/okio-1.5.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bb7d4d96e780e8ef4f275c7d8dd3ef2883ddf99a">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.5.0_9f5e5d9e0419ec32b10ed3519b6bd6eae449d9d9/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -597,30 +606,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ericho/.android/build-cache/2fbcb40fdf1e7b689de7f4f56fca8bc97ad26488/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c9c7e3f3f52b9e47fdb6820929b6c59a9523b54f">
-        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fd860ee5d7d1c2ef3e277a394e98326864b8e09a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ericho/.android/build-cache/77b24afb6ff1ed5fdf2cf5d66f34a7c41fdb7c70/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9068775bb0941e0fc1d4ff9adbf5d73475794955">
-        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5c014e41d17674c4915663da4a7c0932e174b309/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/ericho/workspace/JX_App_Android/app/libs/robotium-solo-5.5.4.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="b5637ed6e0bf430a7f1296108ec6f8bc7adfb01e">
         <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/robotium-solo-5.5.4_dad4e88822e9db7892738c1d0b377285c5928358/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/2fbcb40fdf1e7b689de7f4f56fca8bc97ad26488/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c9c7e3f3f52b9e47fdb6820929b6c59a9523b54f">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fd860ee5d7d1c2ef3e277a394e98326864b8e09a/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -669,21 +669,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ericho/.android/build-cache/1429700e2993bd365e77c3314a5f95389f60aed8/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5ab7b6af3e80111065d8aae2ab9694939bf4d289">
-        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f604a09c0488a0ca42b592e62f188900a91509c2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-KakaoTalk-2.8.2.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="7ee84ad1211b3d649fac6257103ac60529b903ec">
         <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-KakaoTalk-2.8.2_d9d8339e18f54f9e11081508398d9798db6caef6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/1429700e2993bd365e77c3314a5f95389f60aed8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5ab7b6af3e80111065d8aae2ab9694939bf4d289">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f604a09c0488a0ca42b592e62f188900a91509c2/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -750,21 +750,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.networkbench.newlens.agent.android/nbs.newlens.agent/2.4.4/cc45f4416a1b845745d09f0e96d2ad341b523c41/nbs.newlens.agent-2.4.4.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="cc45f4416a1b845745d09f0e96d2ad341b523c41">
-        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/nbs.newlens.agent-2.4.4_59ca39c3c35859d088aa7266e3ee4cfee649afd1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-Wechat-Moments-2.8.2.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="1b40dd5cc7381571d1cc57e03fcf328598d559c4">
         <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-Wechat-Moments-2.8.2_2461df9e9bcfd518f6cc9fa0520ec5e0c758d5ad/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.gradle/caches/modules-2/files-2.1/com.networkbench.newlens.agent.android/nbs.newlens.agent/2.4.4/cc45f4416a1b845745d09f0e96d2ad341b523c41/nbs.newlens.agent-2.4.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cc45f4416a1b845745d09f0e96d2ad341b523c41">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/nbs.newlens.agent-2.4.4_59ca39c3c35859d088aa7266e3ee4cfee649afd1/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -831,21 +831,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ericho/.android/build-cache/e8c1ebd329f090860f7c8fb7c71481e3e36f3597/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5d5d5ac7204a49183f5d30f215fe431349cff26d">
-        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6b3ff8d001859d9590422d39473c1a9c60ae4d7b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/ericho/workspace/JX_App_Android/app/libs/ShareSDK-VKontakte-2.8.2.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="19140c0aa3b019bedeeb14aa605cdfb09eb05d4a">
         <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/ShareSDK-VKontakte-2.8.2_54fad422749976d134d8dfb8f10d4e05134fc824/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ericho/.android/build-cache/e8c1ebd329f090860f7c8fb7c71481e3e36f3597/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5d5d5ac7204a49183f5d30f215fe431349cff26d">
+        <dex dex="/Users/ericho/workspace/JX_App_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6b3ff8d001859d9590422d39473c1a9c60ae4d7b/classes.dex" />
     </item>
     <item
         is-multidex="true"
