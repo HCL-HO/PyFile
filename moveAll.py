@@ -3,11 +3,16 @@ from getFiles import getfiles
 import os
 from shutil import copyfile
 
-print('Searching for a specific file and renaming files in the Directory recursively ...')
-print('Enter the base directory path')
-baseDir = input()
-print('New parent path: ')
-parentPath = input()
+baseDir, parentPath = '', ''
+
+
+def getUserInput():
+    global baseDir, parentPath
+    print('Searching for a specific file and renaming files in the Directory recursively ...')
+    print('Enter the base directory path')
+    baseDir = input()
+    print('New parent path: ')
+    parentPath = input()
 
 
 def mkdir(replaced):

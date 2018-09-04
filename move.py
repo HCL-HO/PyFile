@@ -3,20 +3,25 @@ from getFiles import getfiles
 import os
 from shutil import copyfile
 
-print('Searching for a specific file and renaming files in the Directory recursively ...')
-print('Enter the base directory path')
-baseDir = input()
+baseDir, oldName, parentPath = '', '', ''
 
-print('File to move: ')
-oldName = input()
 
-print('New parent path: ')
-parentPathInput = input()
-parentPath = '/Users/ericho/workspace/JX_App_Android/app/src/main/res'
-if parentPathInput != "":
-    parentPath = parentPathInput
-else:
-    print('empty')
+def getUserInput():
+    global baseDir, oldName, parentPath
+    print('Searching for a specific file and renaming files in the Directory recursively ...')
+    print('Enter the base directory path')
+    baseDir = input()
+
+    print('File to move: ')
+    oldName = input()
+
+    print('New parent path: ')
+    parentPathInput = input()
+    parentPath = '/Users/ericho/workspace/JX_App_Android/app/src/main/res'
+    if parentPathInput != "":
+        parentPath = parentPathInput
+    else:
+        print('Using default path: ' + parentPath)
 
 
 def mkdir(replaced):
