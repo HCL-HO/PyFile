@@ -32,6 +32,7 @@ def move(mfiles):
 
 
 def run():
+    getUserInput()
     p = Path(baseDir)
     dirs = [x for x in p.iterdir() if x.is_dir()]
     print('Directories found: ')
