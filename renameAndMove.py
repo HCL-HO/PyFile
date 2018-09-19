@@ -12,17 +12,17 @@ parentPath = '/Users/ericho/workspace/JX_App_Android/app/src/main/res'
 
 def getUserInput():
     global baseDir, oldName, newName, parentPath
-    if baseDir != '':
+    if baseDir == '':
         print('Searching for a specific file and renaming files in the Directory recursively ...')
         print('Enter the base directory path')
         baseDir = input()
-    if oldName != '':
+    if oldName == '':
         print('File to rename: ')
         oldName = input()
-    if newName != '':
+    if newName == '':
         print('New Names: ')
         newName = input()
-    if parentPath != '':
+    if parentPath == '':
         print('New parent path: ')
         parentPath = input()
 

@@ -3,16 +3,19 @@ from getFiles import getfiles
 import os
 from shutil import copyfile
 
-baseDir, parentPath = '', ''
+baseDir = '/Users/ericho/Downloads/a'
+parentPath = '/Users/ericho/workspace/JX_App_Android/app/src/main/res'
 
 
 def getUserInput():
     global baseDir, parentPath
     print('Searching for a specific file and renaming files in the Directory recursively ...')
-    print('Enter the base directory path')
-    baseDir = input()
-    print('New parent path: ')
-    parentPath = input()
+    if baseDir == '':
+        print('Enter the base directory path')
+        baseDir = input()
+    if parentPath == '':
+        print('New parent path: ')
+        parentPath = input()
 
 
 def mkdir(replaced):
