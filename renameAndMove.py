@@ -7,7 +7,7 @@ from shutil import copyfile
 baseDir = '/Users/ericho/Downloads/a'
 oldName = ''
 newName = ''
-parentPath = '/Users/ericho/workspace/JX_App_Android/app/src/main/res'
+parentPath = '/Users/ericho/workspace/JX/JX_App_Android/app/src/main/res'
 
 
 def getUserInput():

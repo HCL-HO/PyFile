@@ -3,12 +3,15 @@ from getFiles import getfiles
 import os
 from shutil import copyfile
 
-baseDir, oldName, parentPath = '/Users/ericho/Downloads/a', '', '/Users/ericho/workspace/JX_App_Android/app/src/main/res'
+baseDir = '/Users/ericho/Downloads/a'
+oldName = ''
+newName = ''
+parentPath = '/Users/ericho/workspace/JX/JX_App_Android/app/src/main/res'
 
 
 def getUserInput():
     global baseDir, oldName, parentPath
-    if baseDir != '':
+    if baseDir == '':
         print('Searching for a specific file and renaming files in the Directory recursively ...')
         print('Enter the base directory path')
         baseDir = input()
@@ -16,7 +19,7 @@ def getUserInput():
     print('File to move: ')
     oldName = input()
 
-    if parentPath != '':
+    if parentPath == '':
         print('New parent path: ')
         parentPath = input()
 
