@@ -2,11 +2,7 @@ from pathlib import Path
 from getFiles import getfiles
 import os
 from shutil import copyfile
-
-baseDir = '/Users/ericho/Downloads/a'
-oldName = ''
-newName = ''
-parentPath = '/Users/ericho/workspace/JX/JX_App_Android/app/src/main/res'
+from config import *
 
 
 def getUserInput():

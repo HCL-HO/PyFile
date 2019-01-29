@@ -2,13 +2,10 @@ from pathlib import Path
 from os.path import abspath, join, pardir
 from getFiles import getfiles
 import sys
+from config import *
 
 MODE_RENAME = 'rename'
 MODE_RENAME_ALL = 'all'
-
-baseDir = '/Users/ericho/Downloads/a'
-oldName = ''
-newName = ''
 
 
 def getUserInput():

@@ -3,11 +3,7 @@ from pathlib import Path
 from getFiles import getfiles
 import os
 from shutil import copyfile
-
-baseDir = '/Users/ericho/Downloads/a'
-oldName = ''
-newName = ''
-parentPath = '/Users/ericho/workspace/JX/JX_App_Android/app/src/main/res'
+from config import *
 
 
 def getUserInput():
@@ -34,12 +30,12 @@ def mkdir(replaced):
 
 
 def move(x):
-            oldfilepath = str(x.absolute())
-            oldfileparent = str(x.parents[1])
-            dist = oldfilepath.replace(oldfileparent, parentPath)
-            mkdir(dist)
-            copyfile(oldfilepath, dist)
-            print('moved files: ' + str(x.absolute()))
+    oldfilepath = str(x.absolute())
+    oldfileparent = str(x.parents[1])
+    dist = oldfilepath.replace(oldfileparent, parentPath)
+    mkdir(dist)
+    copyfile(oldfilepath, dist)
+    print('moved files: ' + str(x.absolute()))
 
 
 def renameAndMove(mfiles):
